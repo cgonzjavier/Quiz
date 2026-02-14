@@ -1,6 +1,7 @@
 export const preguntasLey = [
   {
     id: 1,
+    titulo: "Título I",
     pregunta: "¿España se constituye en un Estado...?",
     opciones: [
       "Social y democrático de Derecho",
@@ -13,6 +14,7 @@ export const preguntasLey = [
   },
   {
     id: 2,
+    titulo: "Título II",
     pregunta: "¿Dónde reside la soberanía nacional?",
     opciones: [
       "En el Rey",

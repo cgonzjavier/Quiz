@@ -1,159 +1,189 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { preguntasLey } from './data/preguntas'
 
-// Aquí defines las credenciales de tu amigo
-const CREDENCIALES_VALIDAS = {
-  usuario: "admin",
-  password: "ley" 
-}
+const CREDENCIALES_VALIDAS = { usuario: "admin", password: "ley" }
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
-  const [user, setUser] = useState("")
-  const [pass, setPass] = useState("")
-  const [error, setError] = useState(false)
-
+  const [fase, setFase] = useState('menu') // 'menu', 'test', 'resultados'
+  
+  // Estados de configuración
+  const [filtroTitulo, setFiltroTitulo] = useState('Todos')
+  const [numPreguntasReq, setNumPreguntasReq] = useState(10)
+  
   // Estados del Test
+  const [preguntasSeleccionadas, setPreguntasSeleccionadas] = useState([])
   const [preguntaActual, setPreguntaActual] = useState(0)
   const [puntuacion, setPuntuacion] = useState(0)
-  const [mostrarResultado, setMostrarResultado] = useState(false)
   const [respondido, setRespondido] = useState(false)
   const [seleccion, setSeleccion] = useState(null)
 
-  // Función de Login
-  const handleLogin = (e) => {
-    e.preventDefault()
-    if (user === CREDENCIALES_VALIDAS.usuario && pass === CREDENCIALES_VALIDAS.password) {
-      setIsAuthenticated(true)
-      setError(false)
-    } else {
-      setError(true)
-    }
+  // Extraer títulos únicos para el menú
+  const titulosDisponibles = useMemo(() => {
+    return ['Todos', ...new Set(preguntasLey.map(p => p.titulo))];
+  }, []);
+
+  const iniciarTest = () => {
+    // 1. Filtrar por título
+    let filtradas = filtroTitulo === 'Todos' 
+      ? [...preguntasLey] 
+      : preguntasLey.filter(p => p.titulo === filtroTitulo);
+    
+    // 2. Mezclar (Randomize) y limitar número
+    const barajadas = filtradas.sort(() => 0.5 - Math.random())
+    const seleccion = barajadas.slice(0, numPreguntasReq)
+    
+    setPreguntasSeleccionadas(seleccion)
+    setPreguntaActual(0)
+    setPuntuacion(0)
+    setRespondido(false)
+    setSeleccion(null)
+    setFase('test')
   }
 
-  // --- LÓGICA DEL TEST (Igual que antes) ---
-  const manejarRespuesta = (indice) => {
-    if (respondido) return
-    setSeleccion(indice)
-    setRespondido(true)
-    if (indice === preguntasLey[preguntaActual].correcta) setPuntuacion(puntuacion + 1)
-  }
-
-  const siguientePregunta = () => {
-    const siguiente = preguntaActual + 1
-    if (siguiente < preguntasLey.length) {
-      setPreguntaActual(siguiente)
-      setRespondido(false)
-      setSeleccion(null)
-    } else {
-      setMostrarResultado(true)
-    }
-  }
-
-  // 1. VISTA DE LOGIN
+  // --- COMPONENTE: LOGIN ---
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
-        <form onSubmit={handleLogin} className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-sm">
+        <form onSubmit={(e) => { e.preventDefault(); setIsAuthenticated(true); }} className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-sm">
           <h2 className="text-2xl font-bold text-center mb-6 text-slate-800">Acceso Privado</h2>
-          <div className="space-y-4">
-            <input 
-              type="text" placeholder="Usuario" 
-              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
-              onChange={(e) => setUser(e.target.value)}
-            />
-            <input 
-              type="password" placeholder="Contraseña" 
-              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
-              onChange={(e) => setPass(e.target.value)}
-            />
-            {error && <p className="text-red-500 text-sm">Credenciales incorrectas</p>}
-            <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors">
-              Entrar
-            </button>
-          </div>
+          <input type="text" placeholder="Usuario" className="w-full p-3 mb-4 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="password" placeholder="Contraseña" className="w-full p-3 mb-6 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500" />
+          <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700">Entrar</button>
         </form>
       </div>
     )
   }
 
-  // 2. VISTA DE RESULTADOS
-  if (mostrarResultado) {
+  // --- COMPONENTE: MENÚ DE CONFIGURACIÓN ---
+  if (fase === 'menu') {
     return (
       <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-        <div className="bg-white p-8 rounded-xl shadow-lg text-center max-w-md w-full border-t-4 border-blue-600">
-          <h2 className="text-2xl font-bold mb-4">¡Test Finalizado!</h2>
-          <p className="text-5xl font-black text-blue-600 mb-6">{puntuacion} / {preguntasLey.length}</p>
-          <button onClick={() => window.location.reload()} className="w-full bg-slate-800 text-white px-6 py-3 rounded-lg hover:bg-slate-900 transition-all">
-            Volver a empezar
+        <div className="bg-white p-8 rounded-2xl shadow-xl max-w-md w-full border-t-8 border-blue-600">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Configura tu Sesión</h2>
+          
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-700 mb-2">Seleccionar Título del Código Penal</label>
+            <select 
+              value={filtroTitulo} 
+              onChange={(e) => setFiltroTitulo(e.target.value)}
+              className="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              {titulosDisponibles.map(t => <option key={t} value={t}>{t}</option>)}
+            </select>
+          </div>
+
+          <div className="mb-8">
+            <label className="block text-sm font-medium text-gray-700 mb-2">Número de preguntas: {numPreguntasReq}</label>
+            <input 
+              type="range" min="5" max={preguntasLey.length} step="5"
+              value={numPreguntasReq}
+              onChange={(e) => setNumPreguntasReq(e.target.value)}
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
+            />
+          </div>
+
+          <button 
+            onClick={iniciarTest}
+            className="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 shadow-lg shadow-blue-100 transition-all active:scale-95"
+          >
+            ¡Empezar Test!
           </button>
         </div>
       </div>
     )
   }
 
-  // 3. VISTA DEL TEST
-  return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 font-sans">
-      <div className="bg-white p-6 rounded-2xl shadow-xl max-w-2xl w-full">
-        {/* Barra de progreso visual */}
-        <div className="w-full bg-gray-200 h-2 rounded-full mb-6">
-          <div 
-            className="bg-blue-600 h-2 rounded-full transition-all duration-500" 
-            style={{ width: `${((preguntaActual + 1) / preguntasLey.length) * 100}%` }}
-          ></div>
-        </div>
-
-        <div className="mb-4 flex justify-between items-center text-sm">
-          <span className="text-gray-500">Pregunta {preguntaActual + 1} de {preguntasLey.length}</span>
-          <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-bold">Aciertos: {puntuacion}</span>
-        </div>
-
-        <h2 className="text-xl font-semibold mb-6 text-gray-800 leading-tight">
-          {preguntasLey[preguntaActual].pregunta}
-        </h2>
-
-        <div className="space-y-3">
-          {preguntasLey[preguntaActual].opciones.map((opcion, i) => (
-            <button
-              key={i}
-              onClick={() => manejarRespuesta(i)}
-              disabled={respondido}
-              className={`w-full text-left p-4 rounded-xl border-2 transition-all duration-200 ${
-                respondido 
-                  ? i === preguntasLey[preguntaActual].correcta 
-                    ? "border-green-500 bg-green-50 text-green-700 shadow-sm" 
-                    : i === seleccion ? "border-red-500 bg-red-50 text-red-700" : "border-gray-100 text-gray-400"
-                  : "border-gray-100 hover:border-blue-400 hover:bg-blue-50 text-gray-700"
-              }`}
-            >
-              <div className="flex items-center">
-                <span className="mr-3 font-bold opacity-50">{String.fromCharCode(65 + i)})</span>
-                {opcion}
-              </div>
-            </button>
-          ))}
-        </div>
-
-        {respondido && (
-          <div className="mt-6 p-5 bg-slate-50 border border-slate-200 rounded-xl animate-in fade-in duration-500">
-            <h4 className="text-slate-800 font-bold mb-2 flex items-center">
-              <span className="mr-2">💡</span> Explicación legal:
-            </h4>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              {preguntasLey[preguntaActual].explicacion}
-            </p>
-            <button 
-              onClick={siguientePregunta}
-              className="mt-6 w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 shadow-lg shadow-blue-200 transition-all active:scale-[0.98]"
-            >
-              Siguiente pregunta
-            </button>
+  // --- COMPONENTE: TEST ---
+  if (fase === 'test') {
+    const p = preguntasSeleccionadas[preguntaActual]
+    return (
+      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+        <div className="bg-white p-6 rounded-2xl shadow-xl max-w-2xl w-full">
+           {/* Barra de progreso */}
+           <div className="w-full bg-gray-100 h-2 rounded-full mb-6 overflow-hidden">
+            <div 
+              className="bg-blue-600 h-full transition-all duration-500" 
+              style={{ width: `${((preguntaActual + 1) / preguntasSeleccionadas.length) * 100}%` }}
+            ></div>
           </div>
-        )}
+
+          <div className="flex justify-between items-center mb-6 text-sm">
+            <span className="bg-slate-100 text-slate-600 px-3 py-1 rounded-md font-medium">{p.titulo}</span>
+            <span className="text-gray-400">Pregunta {preguntaActual + 1} / {preguntasSeleccionadas.length}</span>
+          </div>
+
+          <h2 className="text-xl font-semibold mb-8 text-gray-800 leading-snug">{p.pregunta}</h2>
+
+          <div className="space-y-3">
+            {p.opciones.map((op, i) => (
+              <button 
+                key={i} 
+                onClick={() => {
+                  if (!respondido) {
+                    setSeleccion(i);
+                    setRespondido(true);
+                    if (i === p.correcta) setPuntuacion(puntuacion + 1);
+                  }
+                }}
+                className={`w-full text-left p-4 rounded-xl border-2 transition-all ${
+                  respondido 
+                    ? i === p.correcta ? "border-green-500 bg-green-50" : i === seleccion ? "border-red-500 bg-red-50" : "border-gray-50 opacity-50"
+                    : "border-gray-100 hover:border-blue-400 hover:bg-blue-50 shadow-sm"
+                }`}
+              >
+                {op}
+              </button>
+            ))}
+          </div>
+
+          {respondido && (
+            <div className="mt-8">
+              <div className="p-4 bg-slate-50 rounded-xl text-sm text-slate-600 border border-slate-100">
+                <strong>Explicación:</strong> {p.explicacion}
+              </div>
+              <button 
+                onClick={() => {
+                  if (preguntaActual + 1 < preguntasSeleccionadas.length) {
+                    setPreguntaActual(preguntaActual + 1);
+                    setRespondido(false);
+                    setSeleccion(null);
+                  } else {
+                    setFase('resultados');
+                  }
+                }}
+                className="mt-4 w-full bg-slate-800 text-white py-4 rounded-xl font-bold hover:bg-slate-900 shadow-xl transition-all"
+              >
+                {preguntaActual + 1 === preguntasSeleccionadas.length ? "Ver resultados" : "Continuar"}
+              </button>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
+
+  // --- COMPONENTE: RESULTADOS ---
+  if (fase === 'resultados') {
+    return (
+      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 text-center">
+        <div className="bg-white p-10 rounded-3xl shadow-2xl max-w-sm w-full">
+          <div className="text-6xl mb-4">🏆</div>
+          <h2 className="text-2xl font-bold text-gray-800 mb-2">¡Completado!</h2>
+          <p className="text-gray-500 mb-6">Has acertado {puntuacion} de {preguntasSeleccionadas.length}</p>
+          <div className="text-4xl font-black text-blue-600 mb-8">
+            {Math.round((puntuacion / preguntasSeleccionadas.length) * 100)}%
+          </div>
+          <button 
+            onClick={() => setFase('menu')}
+            className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition-all"
+          >
+            Volver al menú
+          </button>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default App
