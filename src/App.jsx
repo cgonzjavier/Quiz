@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import { preguntasLey } from './data/preguntas'
 
-const CREDENCIALES_VALIDAS = { usuario: "admin", password: "ley" }
+const CREDENCIALES_VALIDAS = { usuario: "guille", password: "ley" }
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
