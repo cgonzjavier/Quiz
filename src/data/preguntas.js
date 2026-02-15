@@ -5204,5 +5204,3627 @@ export const preguntasLey = [
     opciones: ["Sí, como en cualquier delito", "No, requiere consumación", "Solo si es dolosa"],
     correcta: 0,
     explicacion: "Regla general de la parte general del Código Penal."
+  },
+  {
+    id: 621,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga a quienes impongan condiciones laborales que perjudiquen, supriman o restrinjan derechos legales?",
+    opciones: ["Artículo 311.1º", "Artículo 312", "Artículo 315"],
+    correcta: 0,
+    explicacion: "Art. 311.1 CP: Mediante engaño o abuso de situación de necesidad."
+  },
+  {
+    id: 622,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué conducta se castiga en el artículo 311.2º?",
+    opciones: [
+      "Dar ocupación a trabajadores sin comunicar su alta en la Seguridad Social o sin autorización de trabajo",
+      "No pagar las horas extra",
+      "Obligar a trabajar en festivos"
+    ],
+    correcta: 0,
+    explicacion: "Art. 311.2 CP: Se refiere a la falta de alta en la Seguridad Social de un número relevante de trabajadores."
+  },
+  {
+    id: 623,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "Para que la falta de alta en la Seguridad Social sea delito (311.2º), ¿qué porcentaje de trabajadores debe estar sin alta en empresas de más de 100 empleados?",
+    opciones: ["Al menos el 25%", "Al menos el 50%", "Al menos el 10%"],
+    correcta: 0,
+    explicacion: "Art. 311.2º b) CP: Si la empresa tiene más de 100 trabajadores, el porcentaje debe ser al menos el 25%."
+  },
+
+  // --- TRÁFICO ILEGAL Y MIGRACIÓN (Art. 312-313) ---
+  {
+    id: 624,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga el tráfico ilegal de mano de obra?",
+    opciones: ["Artículo 312", "Artículo 313", "Artículo 311"],
+    correcta: 0,
+    explicacion: "Art. 312.1 CP: El que trafique ilegalmente con mano de obra."
+  },
+  {
+    id: 625,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga el reclutamiento de personas con engaño para trabajar en el extranjero?",
+    opciones: ["Artículo 313", "Artículo 312", "Artículo 314"],
+    correcta: 0,
+    explicacion: "Art. 313 CP: El que determine a una persona a abandonar su puesto de trabajo para emigrar a otro país mediante engaño."
+  },
+
+  // --- DISCRIMINACIÓN LABORAL (Art. 314) ---
+  {
+    id: 626,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga la discriminación grave en el empleo?",
+    opciones: ["Artículo 314", "Artículo 315", "Artículo 510"],
+    correcta: 0,
+    explicacion: "Art. 314 CP: Discriminación por ideología, religión, etnia, sexo, orientación sexual, etc."
+  },
+
+  // --- LIBERTAD SINDICAL Y HUELGA (Art. 315) ---
+  {
+    id: 627,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga a quienes impidan o limiten el ejercicio de la libertad sindical o el derecho de huelga?",
+    opciones: ["Artículo 315", "Artículo 314", "Artículo 316"],
+    correcta: 0,
+    explicacion: "Art. 315.1 CP: Mediante engaño o abuso de situación de necesidad."
+  },
+  {
+    id: 628,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castigaba específicamente a los piquetes informáticos con violencia (derogado/modificado recientemente)?",
+    opciones: ["Artículo 315.3 (Derogado en 2021)", "Artículo 315.2", "Artículo 315.1"],
+    correcta: 0,
+    explicacion: "El apartado 3 del 315 fue derogado para despenalizar la conducta de los piquetes que no fuera gravemente violenta."
+  },
+
+  // --- SEGURIDAD E HIGIENE (Art. 316-317) ---
+  {
+    id: 629,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo regula el delito contra la seguridad e higiene en el trabajo (tipo doloso)?",
+    opciones: ["Artículo 316", "Artículo 317", "Artículo 318"],
+    correcta: 0,
+    explicacion: "Art. 316 CP: Los que con infracción de las normas de prevención de riesgos laborales no faciliten los medios necesarios."
+  },
+  {
+    id: 630,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga la infracción de normas de seguridad por imprudencia grave?",
+    opciones: ["Artículo 317", "Artículo 316", "Artículo 318"],
+    correcta: 0,
+    explicacion: "Art. 317 CP: Cuando el delito del 316 se cometa por imprudencia grave."
+  },
+
+  // --- RESPONSABILIDADES (Art. 318) ---
+  {
+    id: 631,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Quiénes son responsables si los delitos se cometen en nombre de una persona jurídica (Art. 318)?",
+    opciones: [
+      "Los administradores o encargados del servicio que hayan sido responsables de los mismos",
+      "Solo la empresa como entidad",
+      "Todos los trabajadores de la empresa"
+    ],
+    correcta: 0,
+    explicacion: "Art. 318 CP: Se imponen las penas a los administradores o encargados que, conociendo el riesgo, no lo evitaron."
+  },
+
+  // --- REPASO Y DETALLES ESPECÍFICOS ---
+  {
+    id: 632,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Es necesaria la violencia para el tipo del 311.1º?",
+    opciones: ["No, basta con engaño o abuso de necesidad", "Sí, siempre", "Solo si el trabajador es extranjero"],
+    correcta: 0,
+    explicacion: "Art. 311.1 CP."
+  },
+  {
+    id: 633,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga el mantenimiento de condiciones de trabajo impuestas por otro (adquirente de empresa)?",
+    opciones: ["Artículo 311.4º", "Artículo 311.1º", "Artículo 312"],
+    correcta: 0,
+    explicacion: "Art. 311.4 CP: El que, a sabiendas, mantenga condiciones ilegales tras una sucesión de empresa."
+  },
+  {
+    id: 634,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "En empresas de menos de 10 trabajadores, ¿cuántos deben estar sin alta para que sea delito?",
+    opciones: ["Todos", "La mitad", "Al menos 5"],
+    correcta: 0,
+    explicacion: "Art. 311.2º a) CP: En empresas de menos de 10 trabajadores, la totalidad de los mismos."
+  },
+  {
+    id: 635,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "En empresas de 10 a 100 trabajadores, ¿cuántos deben estar sin alta para el 311.2º?",
+    opciones: ["Al menos el 50%", "Al menos el 25%", "Al menos 5"],
+    correcta: 0,
+    explicacion: "Art. 311.2º a) CP."
+  },
+  {
+    id: 636,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga la ocupación de trabajadores extranjeros sin permiso de trabajo de forma masiva?",
+    opciones: ["Artículo 311.2º c)", "Artículo 312", "Artículo 318 bis"],
+    correcta: 0,
+    explicacion: "Art. 311.2º c) CP: Introducido para combatir la explotación de inmigrantes."
+  },
+  {
+    id: 637,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga la coacción para iniciar o continuar una huelga?",
+    opciones: ["Artículo 315.2", "Artículo 315.1", "Artículo 172"],
+    correcta: 0,
+    explicacion: "Art. 315.2 CP."
+  },
+  {
+    id: 638,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿En qué artículo se menciona el abuso de necesidad del trabajador?",
+    opciones: ["Artículo 311", "Artículo 312", "Ambos son correctos"],
+    correcta: 2,
+    explicacion: "Es una circunstancia común en el Título XV."
+  },
+  {
+    id: 639,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Es punible el delito contra la seguridad en el trabajo (316) si no llega a haber accidente?",
+    opciones: ["Sí, es un delito de peligro", "No, debe haber lesión", "Solo si el inspector de trabajo lo dice"],
+    correcta: 0,
+    explicacion: "El 316 castiga el 'poner en peligro grave su vida, salud o integridad física'."
+  },
+  {
+    id: 640,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Cómo se llama el Título XV?",
+    opciones: ["De los delitos contra los derechos de los trabajadores", "De la seguridad en el trabajo", "Del orden social"],
+    correcta: 0,
+    explicacion: "Rúbrica oficial."
+  },
+  {
+    id: 641,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué Título regula los delitos contra la Libertad?",
+    opciones: ["Título VI", "Título XV", "Título VII"],
+    correcta: 0,
+    explicacion: "Título VI."
+  },
+  {
+    id: 642,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga a quienes promuevan la inmigración para explotación laboral?",
+    opciones: ["Artículo 312.2", "Artículo 313", "Artículo 177 bis"],
+    correcta: 0,
+    explicacion: "Art. 312.2 CP."
+  },
+  {
+    id: 643,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿A qué se refiere el artículo 311 bis?",
+    opciones: [
+      "Dar ocupación a un número relevante de trabajadores sin alta o sin permiso de forma reiterada",
+      "El acoso laboral",
+      "El despido nulo"
+    ],
+    correcta: 0,
+    explicacion: "Art. 311 bis CP: Introducido para reforzar la persecución de la economía sumergida."
+  },
+  {
+    id: 644,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿En qué artículo se castiga obligar a un trabajador a que se dé de alta como autónomo (falso autónomo)?",
+    opciones: ["Artículo 311.1º", "Artículo 311.3º", "Artículo 312"],
+    correcta: 0,
+    explicacion: "Se considera una imposición de condiciones que perjudican derechos legales (311.1)."
+  },
+  {
+    id: 645,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué pena tiene el delito del artículo 316 (Seguridad en el trabajo)?",
+    opciones: ["Prisión de 6 meses a 3 años y multa", "Solo multa", "Prisión de 1 a 5 años"],
+    correcta: 0,
+    explicacion: "Art. 316 CP."
+  },
+  {
+    id: 646,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga el cierre ilegal de empresas para impedir el ejercicio de derechos laborales?",
+    opciones: ["Artículo 315.1", "Artículo 311", "Artículo 314"],
+    correcta: 0,
+    explicacion: "Parte de la protección de la libertad sindical y huelga."
+  },
+  {
+    id: 647,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Se puede castigar a una empresa (Persona Jurídica) por estos delitos?",
+    opciones: ["No directamente, el 318 apunta a personas físicas responsables", "Sí, según el 31 bis", "Solo si es una multinacional"],
+    correcta: 0,
+    explicacion: "El Título XV se basa en la responsabilidad de administradores y encargados (Art. 318)."
+  },
+  {
+    id: 648,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿En qué artículo se castiga la discriminación por razón de sexo en el trabajo?",
+    opciones: ["Artículo 314", "Artículo 173", "Artículo 184"],
+    correcta: 0,
+    explicacion: "El 314 es el tipo específico de discriminación laboral."
+  },
+  {
+    id: 649,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga el acoso laboral (mobbing)?",
+    opciones: ["Artículo 173.1 párrafo 2º", "Artículo 314", "Artículo 311"],
+    correcta: 0,
+    explicacion: "Ojo: El mobbing está en el Título VII (Tortura e Integridad Moral), no en el XV."
+  },
+  {
+    id: 650,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿En qué libro del CP se encuentran estos delitos?",
+    opciones: ["Libro II", "Libro I", "Libro III"],
+    correcta: 0,
+    explicacion: "Todos los delitos especiales están en el Libro II."
+  },
+  {
+    id: 651,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga la infracción de normas de prevención si causa muerte?",
+    opciones: ["Concurso entre 316 y 142 (Homicidio imprudente)", "Solo el 316", "Solo el 142"],
+    correcta: 0,
+    explicacion: "Se produce un concurso de delitos."
+  },
+  {
+    id: 652,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga no poner redes de seguridad en una obra?",
+    opciones: ["Artículo 316", "Artículo 317", "Artículo 263"],
+    correcta: 0,
+    explicacion: "Es la falta de medios de seguridad necesaria."
+  },
+  {
+    id: 653,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga obligar a un trabajador a emigrar con promesas falsas?",
+    opciones: ["Artículo 313", "Artículo 312", "Artículo 177 bis"],
+    correcta: 0,
+    explicacion: "Art. 313 CP."
+  },
+  {
+    id: 654,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga el uso de fuerza para impedir a alguien ir a trabajar?",
+    opciones: ["Artículo 315.2", "Artículo 172", "Artículo 311"],
+    correcta: 0,
+    explicacion: "Coacciones en el ámbito de la huelga."
+  },
+  {
+    id: 655,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Es delito la discriminación si no hay requerimiento administrativo previo?",
+    opciones: ["Sí, el 314 exige que no se restablezca la igualdad tras requerimiento o sanción", "No, es delito directo", "Solo si hay violencia"],
+    correcta: 0,
+    explicacion: "Art. 314 CP: '...y no restablezcan la situación de igualdad ante la ley tras requerimiento o sanción administrativa'."
+  },
+  {
+    id: 656,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga el tráfico de órganos?",
+    opciones: ["Artículo 156 bis", "Artículo 312", "Artículo 311"],
+    correcta: 0,
+    explicacion: "Título III."
+  },
+  {
+    id: 657,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga el empleo de menores en espectáculos peligrosos?",
+    opciones: ["No está en este Título (está en el Título VII o XII)", "Artículo 311", "Artículo 316"],
+    correcta: 0,
+    explicacion: "Se suele proteger vía Título XII o leyes específicas, el XV es general de trabajadores."
+  },
+  {
+    id: 658,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿En qué artículo se menciona la imprudencia?",
+    opciones: ["Artículo 317", "Artículo 316", "Artículo 318"],
+    correcta: 0,
+    explicacion: "Único artículo de este título que castiga la vía imprudente."
+  },
+  {
+    id: 659,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué Título regula la Falsedad?",
+    opciones: ["Título XVIII", "Título XV", "Título XIII"],
+    correcta: 0,
+    explicacion: "Título XVIII."
+  },
+  {
+    id: 660,
+    titulo: "Título XV - Trabajadores",
+    pregunta: "¿Qué artículo castiga la coacción a un trabajador para que abandone su sindicato?",
+    opciones: ["Artículo 315.1", "Artículo 314", "Artículo 172"],
+    correcta: 0,
+    explicacion: "Ataque directo a la libertad sindical."
+  },
+  {
+    id: 661,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué precepto penal sanciona a promotores o constructores por realizar edificaciones no autorizables en suelos destinados a viales, zonas verdes o bienes de dominio público?",
+    opciones: ["Artículo 319.1", "Artículo 319.2", "Artículo 320"],
+    correcta: 0,
+    explicacion: "Art. 319.1 CP: Protege suelos con calificación específica de especial protección."
+  },
+  {
+    id: 662,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo tipifica la ejecución de construcciones no autorizadas en suelo no urbanizable?",
+    opciones: ["Artículo 319.2", "Artículo 319.1", "Artículo 320"],
+    correcta: 0,
+    explicacion: "Art. 319.2 CP: Tipo básico referido a la construcción en suelos que carezcan de naturaleza urbanizable."
+  },
+  {
+    id: 663,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "Conforme al artículo 319.3, ¿qué medida de restauración del orden jurídico pueden acordar los jueces y tribunales?",
+    opciones: ["La demolición de la obra y la reposición a su estado originario", "Únicamente la sanción pecuniaria", "El embargo preventivo de los activos de la constructora"],
+    correcta: 0,
+    explicacion: "Art. 319.3 CP: Faculta al juez para ordenar la demolición a costa del responsable."
+  },
+  {
+    id: 664,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo regula la prevaricación urbanística cometida por autoridades que informan favorablemente licencias ilegales?",
+    opciones: ["Artículo 320", "Artículo 404", "Artículo 319"],
+    correcta: 0,
+    explicacion: "Art. 320 CP: Sanciona la concesión de licencias o informes favorables contrarios a la normativa."
+  },
+  {
+    id: 665,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo sanciona el derribo o la alteración grave de edificios catalogados por su especial valor histórico, artístico o cultural?",
+    opciones: ["Artículo 321", "Artículo 323", "Artículo 322"],
+    correcta: 0,
+    explicacion: "Art. 321 CP: Protege la integridad de bienes inmuebles con valor histórico singular."
+  },
+  {
+    id: 666,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿En qué artículo se regula la prevaricación específica relativa a la protección del patrimonio histórico?",
+    opciones: ["Artículo 322", "Artículo 321", "Artículo 320"],
+    correcta: 0,
+    explicacion: "Art. 322 CP: Especialidad de la prevaricación para monumentos o bienes protegidos."
+  },
+  {
+    id: 667,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué precepto castiga los daños causados en un yacimiento arqueológico de valor relevante?",
+    opciones: ["Artículo 323", "Artículo 321", "Artículo 263"],
+    correcta: 0,
+    explicacion: "Art. 323 CP: Referido a yacimientos y bienes de valor científico o histórico."
+  },
+  {
+    id: 668,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Es punible la causación de daños al patrimonio histórico por imprudencia grave?",
+    opciones: ["Sí, en virtud del artículo 324", "No, el tipo solo admite la comisión dolosa", "Solo si el valor del daño es superior a 100.000 €"],
+    correcta: 0,
+    explicacion: "Art. 324 CP: Sanciona daños de los arts. 321 y 323 por imprudencia grave si el perjuicio excede los 400 €."
+  },
+  {
+    id: 669,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo castiga la realización de vertidos o emisiones que pongan en grave peligro el equilibrio de los sistemas naturales?",
+    opciones: ["Artículo 325", "Artículo 328", "Artículo 326"],
+    correcta: 0,
+    explicacion: "Art. 325 CP: Establece el tipo básico del delito medioambiental."
+  },
+  {
+    id: 670,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo recoge las circunstancias agravantes específicas del delito medioambiental?",
+    opciones: ["Artículo 326", "Artículo 325", "Artículo 327"],
+    correcta: 0,
+    explicacion: "Art. 326 CP: Incluye supuestos como la obstaculización de la inspección."
+  },
+  {
+    id: 671,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué precepto penal regula el traslado transfronterizo ilícito de una cantidad importante de residuos?",
+    opciones: ["Artículo 326 bis", "Artículo 325", "Artículo 328"],
+    correcta: 0,
+    explicacion: "Art. 326 bis CP."
+  },
+  {
+    id: 672,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo sanciona el funcionamiento de instalaciones peligrosas o el depósito irregular de sustancias radiactivas?",
+    opciones: ["Artículo 328", "Artículo 325", "Artículo 348"],
+    correcta: 0,
+    explicacion: "Art. 328 CP."
+  },
+  {
+    id: 673,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo tipifica la prevaricación medioambiental cometida por autoridades competentes?",
+    opciones: ["Artículo 329", "Artículo 320", "Artículo 322"],
+    correcta: 0,
+    explicacion: "Art. 329 CP."
+  },
+  {
+    id: 674,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Se prevé sanción penal para los delitos contra el medio ambiente cometidos por imprudencia grave?",
+    opciones: ["Sí, conforme al artículo 331", "No", "Solo si hay afectación a la salud"],
+    correcta: 0,
+    explicacion: "Art. 331 CP: Punición por imprudencia grave para los tipos 325 a 330."
+  },
+  {
+    id: 675,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo castiga la destrucción o recolección ilícita de especies de flora amenazada?",
+    opciones: ["Artículo 332", "Artículo 333", "Artículo 334"],
+    correcta: 0,
+    explicacion: "Art. 332 CP."
+  },
+  {
+    id: 676,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo sanciona la introducción de especies no autóctonas que perjudiquen el equilibrio biológico?",
+    opciones: ["Artículo 333", "Artículo 332", "Artículo 335"],
+    correcta: 0,
+    explicacion: "Art. 333 CP."
+  },
+  {
+    id: 677,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué precepto regula la caza o pesca de especies protegidas de fauna silvestre?",
+    opciones: ["Artículo 334", "Artículo 335", "Artículo 336"],
+    correcta: 0,
+    explicacion: "Art. 334 CP."
+  },
+  {
+    id: 678,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo castiga la caza o pesca en terrenos bajo régimen cinegético especial sin autorización?",
+    opciones: ["Artículo 335", "Artículo 334", "Artículo 336"],
+    correcta: 0,
+    explicacion: "Art. 335 CP."
+  },
+  {
+    id: 679,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo prohíbe el empleo de venenos, explosivos o medios no selectivos para la caza o pesca?",
+    opciones: ["Artículo 336", "Artículo 335", "Artículo 334"],
+    correcta: 0,
+    explicacion: "Art. 336 CP."
+  },
+  {
+    id: 680,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo regula actualmente el delito de maltrato animal?",
+    opciones: ["Artículo 340 bis", "Artículo 337 (Derogado)", "Artículo 336"],
+    correcta: 0,
+    explicacion: "Reforma 2023: desplazado al Título XVI bis."
+  },
+  {
+    id: 681,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Cómo se determina la condición de 'suelo no urbanizable' en el delito urbanístico?",
+    opciones: ["Mediante remisión a la normativa administrativa", "Por su aspecto visual", "Solo por ley estatal"],
+    correcta: 0,
+    explicacion: "Es una norma penal en blanco."
+  },
+  {
+    id: 682,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "La sanción para el funcionario que conceda licencias ilegales (Art. 320) conlleva:",
+    opciones: ["Prisión y multa", "Inhabilitación especial", "Ambas son correctas"],
+    correcta: 2,
+    explicacion: "Prevaricación con consecuencias profesionales y penales."
+  },
+  {
+    id: 683,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo tipifica el expolio de bienes pertenecientes al patrimonio histórico?",
+    opciones: ["Artículo 321", "Artículo 235", "Artículo 323"],
+    correcta: 0,
+    explicacion: "El art. 321 castiga el expolio del bien."
+  },
+  {
+    id: 684,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Es delito la causación de daños por imprudencia leve al patrimonio histórico?",
+    opciones: ["No, se exige imprudencia grave", "Sí, si excede 400 €", "Sí, siempre"],
+    correcta: 0,
+    explicacion: "El artículo 324 solo tipifica la imprudencia grave."
+  },
+  {
+    id: 685,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo prevé la atenuación de la pena por reparación voluntaria del daño?",
+    opciones: ["Artículo 340", "Artículo 21", "Artículo 330"],
+    correcta: 0,
+    explicacion: "Art. 340 CP: Reparación antes del juicio oral."
+  },
+  {
+    id: 686,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿En qué precepto se integra la punición de la contaminación acústica?",
+    opciones: ["Artículo 325", "Artículo 311", "Artículo 263"],
+    correcta: 0,
+    explicacion: "El art. 325 incluye expresamente las vibraciones y emisiones sonoras."
+  },
+  {
+    id: 687,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Cuál es la pena máxima de prisión para el delito ambiental agravado (Art. 325.2)?",
+    opciones: ["5 años", "2 años", "8 años"],
+    correcta: 0,
+    explicacion: "Establece una horquilla de 2 a 5 años de prisión."
+  },
+  {
+    id: 688,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo sanciona el tráfico ilícito de derivados de especies protegidas (marfil)?",
+    opciones: ["Artículo 334.1 b)", "Artículo 335", "Artículo 332"],
+    correcta: 0,
+    explicacion: "Art. 334: Castiga tenencia y tráfico de ejemplares protegidos."
+  },
+  {
+    id: 689,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Se encuentran los incendios forestales regulados en el Título XVI?",
+    opciones: ["No, están en el XVII", "Sí, en el 332", "Sí, en el 325"],
+    correcta: 0,
+    explicacion: "Están en el Título XVII (Seguridad Colectiva)."
+  },
+  {
+    id: 690,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo sanciona el abandono de un animal?",
+    opciones: ["Artículo 340 ter", "Artículo 340 bis", "Artículo 337"],
+    correcta: 0,
+    explicacion: "Art. 340 ter CP (Reforma 2023)."
+  },
+  {
+    id: 691,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué Título regula la prevaricación administrativa general?",
+    opciones: ["Título XIX", "Título XVI", "Título XVIII"],
+    correcta: 0,
+    explicacion: "Título XIX: Delitos contra la Administración Pública."
+  },
+  {
+    id: 692,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo sanciona la falsedad en informes ambientales?",
+    opciones: ["Artículo 329.2", "Artículo 390", "Artículo 325"],
+    correcta: 0,
+    explicacion: "Modalidad específica dentro del ámbito ambiental."
+  },
+  {
+    id: 693,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Es punible el uso de lazos si no se ha capturado ningún animal?",
+    opciones: ["Sí, es un delito de peligro (Art. 336)", "No", "Solo en Parques Nacionales"],
+    correcta: 0,
+    explicacion: "El mero empleo de medios no selectivos ya constituye delito."
+  },
+  {
+    id: 694,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué disposición común obliga a restaurar el equilibrio ecológico?",
+    opciones: ["Artículo 339", "Artículo 319", "Artículo 325"],
+    correcta: 0,
+    explicacion: "Art. 339 CP: Mandato judicial para la restauración."
+  },
+  {
+    id: 695,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué precepto sanciona el maltrato animal con resultado de muerte?",
+    opciones: ["Artículo 340 bis.3", "Artículo 340 bis.1", "Artículo 340 ter"],
+    correcta: 0,
+    explicacion: "El apartado 3 establece la pena máxima por fallecimiento."
+  },
+  {
+    id: 696,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Cómo se califica el robo de bienes históricos en templos?",
+    opciones: ["Robo agravado (Art. 235.1)", "Delito contra patrimonio histórico", "Daños agravados"],
+    correcta: 0,
+    explicacion: "El art. 235 agrava la pena por la naturaleza del objeto."
+  },
+  {
+    id: 697,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿En qué artículo se castiga el vertido masivo de residuos?",
+    opciones: ["Art. 325 o 328 según riesgo", "Art. 332", "No es delito"],
+    correcta: 0,
+    explicacion: "Dependerá de la gravedad del riesgo ambiental."
+  },
+  {
+    id: 698,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo establece la responsabilidad de personas jurídicas en urbanismo?",
+    opciones: ["Artículo 319.4", "Artículo 31 bis", "Artículo 320"],
+    correcta: 0,
+    explicacion: "Art. 319.4 aplica específicamente este régimen."
+  },
+  {
+    id: 699,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo prevé la responsabilidad de personas jurídicas en medio ambiente?",
+    opciones: ["Artículo 328.6", "Artículo 325", "Artículo 331"],
+    correcta: 0,
+    explicacion: "Art. 328.6 detalla las penas aplicables."
+  },
+  {
+    id: 700,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué normativa regula la exportación ilícita de bienes históricos?",
+    opciones: ["Ley de Contrabando", "Art. 321 CP", "Art. 323 CP"],
+    correcta: 0,
+    explicacion: "Suele reconducirse a delitos de contrabando."
+  },
+  {
+    id: 701,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo sanciona la pesca con explosivos?",
+    opciones: ["Artículo 336", "Artículo 335", "Artículo 334"],
+    correcta: 0,
+    explicacion: "El art. 336 prohíbe medios destructivos no selectivos."
+  },
+  {
+    id: 702,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué precepto castiga la tala no autorizada de flora protegida?",
+    opciones: ["Artículo 332", "Artículo 325", "Artículo 319"],
+    correcta: 0,
+    explicacion: "El art. 332 protege especies amenazadas."
+  },
+  {
+    id: 703,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Quién decreta la demolición de una edificación ilegal en sentencia penal?",
+    opciones: ["El Juez o Tribunal", "El Alcalde", "La Comunidad Autónoma"],
+    correcta: 0,
+    explicacion: "Potestad judicial recogida en el art. 319.3."
+  },
+  {
+    id: 704,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Cómo se califica que un inspector omita denunciar contaminación grave?",
+    opciones: ["Prevaricación medioambiental (Art. 329)", "Delito leve", "Tipo básico"],
+    correcta: 0,
+    explicacion: "Art. 329 castiga el silencio del funcionario."
+  },
+  {
+    id: 705,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Se aplica el tipo de maltrato animal a ejemplares silvestres?",
+    opciones: ["No, solo domésticos o bajo control humano", "Sí, a todos", "Solo protegidos"],
+    correcta: 0,
+    explicacion: "Requiere que sea doméstico o bajo control humano."
+  },
+  {
+    id: 706,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué circunstancia agrava específicamente el maltrato animal?",
+    opciones: ["Organización de peleas", "Raza pura", "Nocturnidad"],
+    correcta: 0,
+    explicacion: "La organización de peleas es una agravante del 340 bis."
+  },
+  {
+    id: 707,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué precepto sanciona construir en servidumbre de costas?",
+    opciones: ["Artículo 319.1", "Artículo 319.2", "Artículo 320"],
+    correcta: 0,
+    explicacion: "Suelo protegido por su valor paisajístico o ambiental."
+  },
+  {
+    id: 708,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Cómo se califican las pintadas en un monumento nacional?",
+    opciones: ["Daños al patrimonio histórico (Art. 323)", "Daños genéricos", "Deslucimiento"],
+    correcta: 0,
+    explicacion: "Al afectar a un bien histórico, se aplica el art. 323."
+  },
+  {
+    id: 709,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Se incluye la radiación ionizante en el tipo de delitos ambientales?",
+    opciones: ["Sí, en el 325", "No", "Solo en el 328"],
+    correcta: 0,
+    explicacion: "El art. 325 la enumera como agente contaminante."
+  },
+  {
+    id: 710,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué pena accesoria es preceptiva en condenas por maltrato animal?",
+    opciones: ["Inhabilitación para la tenencia", "Multa", "Prisión"],
+    correcta: 0,
+    explicacion: "La inhabilitación para trato con animales es obligatoria."
+  },
+  {
+    id: 711,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Requiere la demolición de obra ilegal que la sentencia sea firme?",
+    opciones: ["Sí, como regla general", "No", "Solo si es gran obra"],
+    correcta: 0,
+    explicacion: "Las penas y medidas se ejecutan tras la firmeza."
+  },
+  {
+    id: 712,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué precepto sanciona el comercio ilícito de flora protegida?",
+    opciones: ["Artículo 332", "Artículo 334", "Artículo 333"],
+    correcta: 0,
+    explicacion: "El art. 332 prohíbe recolección y tráfico."
+  },
+  {
+    id: 713,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo castiga la pesca de ejemplares inmaduros?",
+    opciones: ["Artículo 335.2", "Artículo 334", "Artículo 336"],
+    correcta: 0,
+    explicacion: "Art. 335.2: Remite a especies prohibidas por normativa."
+  },
+  {
+    id: 714,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Se pueden perseguir en España delitos ambientales con efectos fuera de fronteras?",
+    opciones: ["Sí, por el principio de ubicuidad", "No", "Solo si el otro país pide ayuda"],
+    correcta: 0,
+    explicacion: "Si la acción u omisión ocurre en España, hay jurisdicción."
+  },
+  {
+    id: 715,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo sanciona edificar en un Parque Natural?",
+    opciones: ["Artículo 319.1", "Artículo 319.2", "Artículo 320"],
+    correcta: 0,
+    explicacion: "Suelo con protección especial."
+  },
+  {
+    id: 716,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Cómo se califica no comunicar el hallazgo de un tesoro histórico?",
+    opciones: ["Apropiación indebida", "Hurto", "Delito patrimonio"],
+    correcta: 0,
+    explicacion: "Jurisprudencia: apropiación indebida de bienes históricos."
+  },
+  {
+    id: 717,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Cuál es el artículo final de las disposiciones comunes del Título XVI?",
+    opciones: ["Artículo 340", "Artículo 331", "Artículo 338"],
+    correcta: 0,
+    explicacion: "Art. 340: Atenuante por reparación voluntaria."
+  },
+  {
+    id: 718,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué artículo agrava el maltrato animal en espectáculos no autorizados?",
+    opciones: ["Artículo 340 bis.2.e)", "Artículo 337", "Artículo 335"],
+    correcta: 0,
+    explicacion: "Circunstancia específica de agravación."
+  },
+  {
+    id: 719,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Responde penalmente el técnico director de una obra ilegal?",
+    opciones: ["Sí (Art. 319)", "No", "Solo si es funcionario"],
+    correcta: 0,
+    explicacion: "El tipo menciona promotores, constructores y técnicos."
+  },
+  {
+    id: 720,
+    titulo: "Título XVI - Ordenación, Patrimonio y Medio Ambiente",
+    pregunta: "¿Qué Título protege la Propiedad Intelectual?",
+    opciones: ["Título XIII", "Título XVI", "Título XVIII"],
+    correcta: 0,
+    explicacion: "Se encuentran en el Título XIII (Orden Socioeconómico)."
+  },
+  {
+    id: 781,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de moneda metálica o papel moneda?",
+    opciones: ["Artículo 386", "Artículo 387", "Artículo 389"],
+    correcta: 0,
+    explicacion: "Art. 386 CP: Incluye alteración, exportación o importación de moneda falsa."
+  },
+  {
+    id: 782,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "A efectos penales, ¿qué se entiende por moneda según el artículo 387?",
+    opciones: ["La de curso legal, las tarjetas de crédito y cheques de viaje", "Solo billetes y monedas de euro", "Cualquier objeto de valor"],
+    correcta: 0,
+    explicacion: "Art. 387 CP: Amplía el concepto a tarjetas, cheques de viaje y moneda extranjera."
+  },
+  {
+    id: 783,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de sellos de correos o efectos timbrados?",
+    opciones: ["Artículo 389", "Artículo 386", "Artículo 390"],
+    correcta: 0,
+    explicacion: "Art. 389 CP."
+  },
+
+  // --- SECCIÓN 2: FALSEDAD DOCUMENTAL (Arts. 390-399) ---
+  {
+    id: 784,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga al funcionario público que, en el ejercicio de sus funciones, falte a la verdad en la narración de los hechos?",
+    opciones: ["Artículo 390.1.4º", "Artículo 392", "Artículo 395"],
+    correcta: 0,
+    explicacion: "Art. 390.1.4º CP: Es la falsedad ideológica cometida por funcionario."
+  },
+  {
+    id: 785,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de documentos públicos o mercantiles por un particular?",
+    opciones: ["Artículo 392", "Artículo 390", "Artículo 395"],
+    correcta: 0,
+    explicacion: "Art. 392 CP: El particular que comete las falsedades del 390.1 (excepto la ideológica pura)."
+  },
+  {
+    id: 786,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de un documento privado?",
+    opciones: ["Artículo 395", "Artículo 392", "Artículo 390"],
+    correcta: 0,
+    explicacion: "Art. 395 CP: Requiere el ánimo de perjudicar a otro."
+  },
+  {
+    id: 787,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga el uso de un documento falso a sabiendas de su falsedad por alguien que no participó en la falsificación?",
+    opciones: ["Artículo 393", "Artículo 396", "Ambos según el tipo de documento"],
+    correcta: 2,
+    explicacion: "El 393 para públicos/oficiales y el 396 para privados."
+  },
+  {
+    id: 788,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de certificados por un facultativo (médico)?",
+    opciones: ["Artículo 397", "Artículo 398", "Artículo 399"],
+    correcta: 0,
+    explicacion: "Art. 397 CP."
+  },
+  {
+    id: 789,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de certificados por un funcionario público?",
+    opciones: ["Artículo 398", "Artículo 397", "Artículo 399"],
+    correcta: 0,
+    explicacion: "Art. 398 CP."
+  },
+  {
+    id: 790,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de tarjetas de crédito o débito?",
+    opciones: ["Artículo 399 bis", "Artículo 387", "Artículo 392"],
+    correcta: 0,
+    explicacion: "Art. 399 bis CP: Tiene regulación específica por su alta frecuencia."
+  },
+
+  // --- REFUERZO Y MATICES ---
+  {
+    id: 791,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Es punible la falsedad documental por imprudencia grave?",
+    opciones: ["Sí, en el artículo 391", "No, solo el dolo", "Solo si es moneda"],
+    correcta: 0,
+    explicacion: "Art. 391 CP: Solo para autoridades o funcionarios públicos."
+  },
+  {
+    id: 792,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué se considera documento a efectos penales?",
+    opciones: ["Todo soporte material que exprese o incorpore datos con eficacia probatoria", "Solo el papel escrito", "Solo documentos firmados ante notario"],
+    correcta: 0,
+    explicacion: "Art. 26 CP: Definición amplia que incluye soportes digitales."
+  },
+  {
+    id: 793,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la tenencia de útiles para la falsificación de moneda?",
+    opciones: ["Artículo 400", "Artículo 386", "Artículo 390"],
+    correcta: 0,
+    explicacion: "Art. 400 CP: Fabricación o tenencia de útiles destinados a la falsificación."
+  },
+  {
+    id: 794,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga el uso de un nombre supuesto para cometer un delito?",
+    opciones: ["Artículo 401", "Artículo 390", "Artículo 402"],
+    correcta: 0,
+    explicacion: "Art. 401 CP: Usurpación del estado civil."
+  },
+  {
+    id: 795,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga el ejercicio de actos propios de una profesión sin título (intrusismo)?",
+    opciones: ["Artículo 403", "Artículo 401", "Artículo 402"],
+    correcta: 0,
+    explicacion: "Art. 403 CP."
+  },
+  {
+    id: 796,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la usurpación de funciones públicas?",
+    opciones: ["Artículo 402", "Artículo 401", "Artículo 403"],
+    correcta: 0,
+    explicacion: "Art. 402 CP: Ejercer actos oficiales sin título legítimo."
+  },
+  {
+    id: 797,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿En qué artículo se castiga la fabricación de moneda falsa sin llegar a distribuirla?",
+    opciones: ["Artículo 386.1", "Artículo 400", "No es delito hasta que se usa"],
+    correcta: 0,
+    explicacion: "La mera alteración o fabricación ya es delito consumado."
+  },
+  {
+    id: 798,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Cuál es la pena para quien habiendo recibido moneda falsa de buena fe la distribuye tras conocer su falsedad?",
+    opciones: ["Pena inferior (si el valor supera 400€)", "La misma que el falsificador", "No tiene pena"],
+    correcta: 0,
+    explicacion: "Art. 386.3 CP: Si el valor es superior a 400 euros."
+  },
+  {
+    id: 799,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿En qué artículo se define 'efectos timbrados'?",
+    opciones: ["No se definen, pero incluyen pólizas y papel sellado", "Artículo 387", "Artículo 389"],
+    correcta: 0,
+    explicacion: "Concepto administrativo integrado en el 389."
+  },
+  {
+    id: 800,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga simular un documento en todo o en parte de manera que induzca a error sobre su autenticidad?",
+    opciones: ["Artículo 390.1.2º", "Artículo 390.1.1º", "Artículo 395"],
+    correcta: 0,
+    explicacion: "Art. 390.1.2º CP."
+  },
+  {
+    id: 801,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué Título regula los delitos contra la Administración Pública?",
+    opciones: ["Título XIX", "Título XVIII", "Título XX"],
+    correcta: 0,
+    explicacion: "Título XIX."
+  },
+  {
+    id: 802,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Es delito de falsedad si un particular falta a la verdad en la narración de los hechos de un documento público?",
+    opciones: ["No, esa modalidad (ideológica) solo la comete el funcionario", "Sí, según el 392", "Solo si hay estafa"],
+    correcta: 0,
+    explicacion: "Jurisprudencia consolidada: la falsedad ideológica en particulares es atípica en este título."
+  },
+  {
+    id: 803,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga el tráfico de tarjetas de crédito falsas?",
+    opciones: ["Artículo 399 bis.2", "Artículo 386", "Artículo 392"],
+    correcta: 0,
+    explicacion: "Art. 399 bis CP."
+  },
+  {
+    id: 804,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga el despacho de recetas médicas falsas?",
+    opciones: ["Artículo 397 (si es médico) / 392 (si es particular)", "Artículo 361", "Artículo 368"],
+    correcta: 0,
+    explicacion: "La receta médica es un documento oficial a efectos penales."
+  },
+  {
+    id: 805,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsedad en certificados de la Seguridad Social?",
+    opciones: ["Artículo 398", "Artículo 307", "Artículo 310"],
+    correcta: 0,
+    explicacion: "Se rige por la falsedad de certificados."
+  },
+  {
+    id: 806,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿En qué artículo se menciona la conspiración para falsificar moneda?",
+    opciones: ["Artículo 388", "Artículo 373", "Artículo 400"],
+    correcta: 0,
+    explicacion: "Art. 388 CP: Castiga la provocación, conspiración y proposición."
+  },
+  {
+    id: 807,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga al particular que usa un certificado falso de discapacidad?",
+    opciones: ["Artículo 399.2", "Artículo 393", "Artículo 396"],
+    correcta: 0,
+    explicacion: "Art. 399.2 CP: Uso de certificados falsos."
+  },
+  {
+    id: 808,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿En qué libro estamos?",
+    opciones: ["Libro II", "Libro I", "Libro III"],
+    correcta: 0,
+    explicacion: "Libro II (Delitos y penas)."
+  },
+  {
+    id: 809,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la alteración de un cheque bancario?",
+    opciones: ["Artículo 392 (Documento mercantil)", "Artículo 395", "Artículo 386"],
+    correcta: 0,
+    explicacion: "Los cheques son documentos mercantiles."
+  },
+  {
+    id: 810,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de marcas de contraste de objetos de metales preciosos?",
+    opciones: ["Artículo 400 bis", "Artículo 389", "Artículo 285"],
+    correcta: 0,
+    explicacion: "Art. 400 bis CP."
+  },
+  {
+    id: 811,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsedad en el DNI?",
+    opciones: ["Artículo 392", "Artículo 395", "Artículo 401"],
+    correcta: 0,
+    explicacion: "El DNI es el documento oficial por excelencia."
+  },
+  {
+    id: 812,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga al que finge ser policía sin serlo?",
+    opciones: ["Artículo 402", "Artículo 401", "Artículo 403"],
+    correcta: 0,
+    explicacion: "Usurpación de funciones públicas."
+  },
+  {
+    id: 813,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿En qué artículo se castiga usar el título de 'Arquitecto' sin tenerlo?",
+    opciones: ["Artículo 403", "Artículo 402", "Artículo 392"],
+    correcta: 0,
+    explicacion: "Intrusismo profesional."
+  },
+  {
+    id: 814,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de billetes de tren o autobús?",
+    opciones: ["Artículo 392 (Documento oficial/mercantil)", "Artículo 389", "Artículo 395"],
+    correcta: 0,
+    explicacion: "Suelen considerarse documentos mercantiles o privados según el emisor."
+  },
+  {
+    id: 815,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de la firma de un particular en una carta?",
+    opciones: ["Artículo 395", "Artículo 392", "No es delito si no hay daño"],
+    correcta: 0,
+    explicacion: "Falsedad en documento privado (exige ánimo de perjudicar)."
+  },
+  {
+    id: 816,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de las placas de matrícula?",
+    opciones: ["Artículo 392", "Artículo 399", "Artículo 400"],
+    correcta: 0,
+    explicacion: "La matrícula es un documento oficial (certificación pública)."
+  },
+  {
+    id: 817,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo regula la falsedad en el testamento?",
+    opciones: ["Artículo 392 (si es ológrafo es privado, pero judicializado es oficial)", "Artículo 390", "Artículo 395"],
+    correcta: 0,
+    explicacion: "Dependerá de la naturaleza del testamento."
+  },
+  {
+    id: 818,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsedad en libros de contabilidad de una empresa?",
+    opciones: ["Artículo 392", "Artículo 310", "Ambos"],
+    correcta: 2,
+    explicacion: "Puede ser falsedad mercantil (392) y delito contable (310)."
+  },
+  {
+    id: 819,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿En qué artículo se castiga la falsedad en una letra de cambio?",
+    opciones: ["Artículo 392", "Artículo 395", "Artículo 386"],
+    correcta: 0,
+    explicacion: "Documento mercantil."
+  },
+  {
+    id: 820,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Cómo se llama el Título XVIII?",
+    opciones: ["De las falsedades", "De la fe pública", "De las mentiras"],
+    correcta: 0,
+    explicacion: "Rúbrica oficial."
+  },
+  {
+    id: 821,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga al funcionario que expide un pasaporte falso?",
+    opciones: ["Artículo 390", "Artículo 392", "Artículo 398"],
+    correcta: 0,
+    explicacion: "Falsedad en documento oficial por funcionario."
+  },
+  {
+    id: 822,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga el borrado de la fecha de caducidad en un envase?",
+    opciones: ["Artículo 392 (si es mercantil)", "Artículo 361", "Artículo 395"],
+    correcta: 0,
+    explicacion: "Falsedad documental."
+  },
+  {
+    id: 823,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsedad de moneda extranjera?",
+    opciones: ["Artículo 386", "Artículo 387", "Ambos"],
+    correcta: 2,
+    explicacion: "El 386 la castiga y el 387 la asimila a la nacional."
+  },
+  {
+    id: 824,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la tenencia de tarjetas de crédito falsificadas?",
+    opciones: ["Artículo 399 bis.3", "Artículo 400", "Artículo 393"],
+    correcta: 0,
+    explicacion: "Tenencia para su distribución o uso."
+  },
+  {
+    id: 825,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Es delito la falsedad por omisión (dejar de anotar algo obligatorio)?",
+    opciones: ["Sí, en el artículo 390.1.4º", "No, solo actos positivos", "Solo en documentos privados"],
+    correcta: 0,
+    explicacion: "Faltar a la verdad puede ser por omisión."
+  },
+  {
+    id: 826,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsedad en un acta de examen oficial?",
+    opciones: ["Artículo 390", "Artículo 397", "Artículo 398"],
+    correcta: 0,
+    explicacion: "Documento oficial."
+  },
+  {
+    id: 827,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿En qué artículo se castiga el uso de un uniforme oficial sin derecho?",
+    opciones: ["Artículo 402 bis", "Artículo 402", "No es delito"],
+    correcta: 0,
+    explicacion: "Art. 402 bis CP: Uso público e indebido de uniforme, traje o insignia."
+  },
+  {
+    id: 828,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de una nómina para pedir un crédito?",
+    opciones: ["Artículo 395 (Documento privado)", "Artículo 392", "Artículo 248 (Estafa)"],
+    correcta: 0,
+    explicacion: "Suele ser el medio para una estafa, pero como tal es falsedad en documento privado."
+  },
+  {
+    id: 829,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsedad en una receta de un hospital público?",
+    opciones: ["Artículo 390", "Artículo 397", "Artículo 392"],
+    correcta: 0,
+    explicacion: "Documento oficial."
+  },
+  {
+    id: 830,
+    titulo: "Título XVIII - Falsedades",
+    pregunta: "¿Qué artículo castiga la falsificación de billetes de Lotería Nacional?",
+    opciones: ["Artículo 392 (Documento oficial)", "Artículo 389", "Artículo 386"],
+    correcta: 0,
+    explicacion: "Los décimos de lotería son documentos oficiales."
+  },
+  {
+    id: 831,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga a la autoridad o funcionario que dicta una resolución arbitraria a sabiendas de su injusticia?",
+    opciones: ["Artículo 404", "Artículo 405", "Artículo 406"],
+    correcta: 0,
+    explicacion: "Art. 404 CP: Es el tipo básico de la prevaricación administrativa."
+  },
+  {
+    id: 832,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el nombramiento ilegal para un cargo público?",
+    opciones: ["Artículo 405", "Artículo 406", "Artículo 404"],
+    correcta: 0,
+    explicacion: "Art. 405 CP: Castiga tanto al que nombra como al que acepta el cargo sabiendo que carece de requisitos."
+  },
+
+  // --- CAPÍTULO II: ABANDONO DE DESTINO Y OMISIÓN DEL DEBER (Arts. 407-409) ---
+  {
+    id: 833,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el abandono de destino para no impedir delitos como la rebelión?",
+    opciones: ["Artículo 407", "Artículo 408", "Artículo 409"],
+    correcta: 0,
+    explicacion: "Art. 407 CP: Abandono de destino con un fin específico de dejar desprotegido el orden público."
+  },
+  {
+    id: 834,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al funcionario que, faltando a su deber, no persigue delitos?",
+    opciones: ["Artículo 408", "Artículo 407", "Artículo 409"],
+    correcta: 0,
+    explicacion: "Art. 408 CP: Omisión del deber de perseguir delitos."
+  },
+
+  // --- CAPÍTULO III: DESOBEDIENCIA Y DENEGACIÓN DE AUXILIO (Arts. 410-412) ---
+  {
+    id: 835,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la desobediencia abierta de un funcionario a las órdenes de sus superiores?",
+    opciones: ["Artículo 410", "Artículo 411", "Artículo 412"],
+    correcta: 0,
+    explicacion: "Art. 410 CP. Excepto si la orden constituye una infracción manifiesta y terminante de la ley."
+  },
+  {
+    id: 836,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la denegación de auxilio debido por parte de un funcionario?",
+    opciones: ["Artículo 412", "Artículo 410", "Artículo 411"],
+    correcta: 0,
+    explicacion: "Art. 412 CP: Incluye la denegación de auxilio a la Administración de Justicia o requerimientos de particulares."
+  },
+
+  // --- CAPÍTULO IV: INFIDELIDAD EN LA CUSTODIA DE DOCUMENTOS Y SECRETOS (Arts. 413-418) ---
+  {
+    id: 837,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la sustracción o destrucción de documentos confiados al funcionario por razón de su cargo?",
+    opciones: ["Artículo 413", "Artículo 414", "Artículo 415"],
+    correcta: 0,
+    explicacion: "Art. 413 CP."
+  },
+  {
+    id: 838,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la revelación de secretos o informaciones que el funcionario conozca por su cargo?",
+    opciones: ["Artículo 417", "Artículo 418", "Artículo 416"],
+    correcta: 0,
+    explicacion: "Art. 417 CP."
+  },
+
+  // --- CAPÍTULO V: COHECHO (Arts. 419-427 bis) ---
+  {
+    id: 839,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo define el cohecho propio (recibir dádiva para realizar un acto contrario a los deberes del cargo)?",
+    opciones: ["Artículo 419", "Artículo 420", "Artículo 422"],
+    correcta: 0,
+    explicacion: "Art. 419 CP."
+  },
+  {
+    id: 840,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo define el cohecho impropio (aceptar dádiva admitida en consideración al cargo)?",
+    opciones: ["Artículo 422", "Artículo 419", "Artículo 421"],
+    correcta: 0,
+    explicacion: "Art. 422 CP: Aceptar regalos por el mero hecho de ser funcionario, sin pedir nada concreto a cambio."
+  },
+
+  
+
+  {
+    id: 841,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué artículo se prevé la exención de pena para el particular que accede al soborno pero lo denuncia antes de 2 meses?",
+    opciones: ["Artículo 426", "Artículo 424", "Artículo 427"],
+    correcta: 0,
+    explicacion: "Art. 426 CP: Excusa absolutoria por denuncia temprana."
+  },
+
+  // --- CAPÍTULO VI: TRÁFICO DE INFLUENCIAS (Arts. 428-431) ---
+  {
+    id: 842,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al funcionario que influye en otro funcionario para obtener un beneficio económico?",
+    opciones: ["Artículo 428", "Artículo 429", "Artículo 430"],
+    correcta: 0,
+    explicacion: "Art. 428 CP."
+  },
+  {
+    id: 843,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al particular que influye en un funcionario prevaliéndose de su relación personal?",
+    opciones: ["Artículo 429", "Artículo 428", "Artículo 430"],
+    correcta: 0,
+    explicacion: "Art. 429 CP."
+  },
+
+  // --- CAPÍTULO VII: MALVERSACIÓN (Arts. 432-435 bis) ---
+  {
+    id: 844,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo define el tipo básico de malversación (apropiación de patrimonio público)?",
+    opciones: ["Artículo 432", "Artículo 433", "Artículo 434"],
+    correcta: 0,
+    explicacion: "Art. 432 CP: Administrar de forma desleal o apropiarse de fondos públicos."
+  },
+  {
+    id: 845,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga dar al patrimonio público una aplicación pública diferente de aquella a que estuviere destinado?",
+    opciones: ["Artículo 433", "Artículo 432", "Artículo 432 bis"],
+    correcta: 0,
+    explicacion: "Art. 433 CP: Introducido en la reforma de 2022 para diferenciar el uso indebido de la apropiación."
+  },
+
+  // --- CAPÍTULO VIII: FRAUDES Y EXACCIONES ILEGALES (Arts. 436-438 bis) ---
+  {
+    id: 846,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga a la autoridad que se concierta con particulares para defraudar a cualquier ente público?",
+    opciones: ["Artículo 436", "Artículo 437", "Artículo 438"],
+    correcta: 0,
+    explicacion: "Art. 436 CP."
+  },
+  {
+    id: 847,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el cobrar derechos o tarifas no autorizadas (exacción ilegal)?",
+    opciones: ["Artículo 437", "Artículo 436", "Artículo 438"],
+    correcta: 0,
+    explicacion: "Art. 437 CP."
+  },
+
+  // --- CAPÍTULO IX: NEGOCIACIONES PROHIBIDAS Y ACTIVIDADES PROHIBIDAS (Arts. 439-444) ---
+  {
+    id: 848,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al funcionario que deba informar en una operación y se aprovecha para su propio beneficio?",
+    opciones: ["Artículo 439", "Artículo 440", "Artículo 441"],
+    correcta: 0,
+    explicacion: "Art. 439 CP: Negociaciones prohibidas."
+  },
+  {
+    id: 849,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el acoso sexual cometido por funcionario público prevaliéndose de su cargo?",
+    opciones: ["Artículo 443", "Artículo 184", "Artículo 314"],
+    correcta: 0,
+    explicacion: "Art. 443 CP: Delitos cometidos por los funcionarios públicos contra la libertad sexual."
+  },
+
+  // (Preguntas de repaso y técnicas ID 850-900)
+  {
+    id: 850,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Se aplica la malversación a quienes administran fondos de la Seguridad Social?",
+    opciones: ["Sí, se consideran fondos públicos", "No, son fondos sociales", "Solo si es una mutua"],
+    correcta: 0,
+    explicacion: "Art. 435 CP: Extiende la malversación a gestores de fondos de la SS o fondos embargados."
+  },
+  {
+    id: 851,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la solicitud de favores sexuales por parte de un funcionario de prisiones?",
+    opciones: ["Artículo 443.2", "Artículo 441", "Artículo 173"],
+    correcta: 0,
+    explicacion: "Art. 443.2 CP: Específico para centros de protección o corrección."
+  },
+  {
+    id: 852,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué artículo se define quién es funcionario público a efectos penales?",
+    opciones: ["Artículo 24.2", "Artículo 404", "Artículo 432"],
+    correcta: 0,
+    explicacion: "Art. 24.2 CP: Todo el que por disposición de ley participe en funciones públicas."
+  },
+  {
+    id: 853,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Es delito de prevaricación una resolución verbal?",
+    opciones: ["Sí, puede ser dictada por escrito o de palabra", "No, debe ser un expediente", "Solo si es un decreto"],
+    correcta: 0,
+    explicacion: "La jurisprudencia admite la prevaricación verbal en actos administrativos."
+  },
+  {
+    id: 854,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al funcionario que accede a datos de Hacienda para cotillear (sin causa)?",
+    opciones: ["Artículo 417 (Revelación/Uso de secretos)", "Artículo 197", "Artículo 436"],
+    correcta: 0,
+    explicacion: "Uso de información privilegiada o secreta."
+  },
+  {
+    id: 855,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la malversación por imprudencia grave?",
+    opciones: ["No existe (fue derogada/modificada)", "Artículo 432 bis", "Artículo 435"],
+    correcta: 0,
+    explicacion: "La malversación requiere dolo tras las últimas reformas."
+  },
+  {
+    id: 856,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el cohecho si el funcionario es un jurado o perito?",
+    opciones: ["Artículo 423", "Artículo 419", "Artículo 427"],
+    correcta: 0,
+    explicacion: "Art. 423 CP: Extiende el cohecho a jurados, árbitros, peritos y administradores concursales."
+  },
+  {
+    id: 857,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el cohecho internacional?",
+    opciones: ["Artículo 427", "Artículo 425", "Artículo 426"],
+    correcta: 0,
+    explicacion: "Art. 427 CP: Soborno de funcionarios de otros Estados o de organizaciones internacionales."
+  },
+  {
+    id: 858,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Es punible la malversación si el funcionario devuelve el dinero antes de 10 días desde el proceso?",
+    opciones: ["Es una atenuante (434)", "Se extingue la pena", "No influye"],
+    correcta: 0,
+    explicacion: "Art. 334 CP: Atenuante muy cualificada por reparación del daño."
+  },
+  {
+    id: 859,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el uso de información privilegiada por funcionario para ganar dinero en bolsa?",
+    opciones: ["Artículo 418", "Artículo 285", "Artículo 442"],
+    correcta: 2,
+    explicacion: "Art. 442 CP: Uso de información privilegiada."
+  },
+  {
+    id: 860,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué Título regula la Administración de Justicia?",
+    opciones: ["Título XX", "Título XIX", "Título XXI"],
+    correcta: 0,
+    explicacion: "Título XX."
+  },
+  {
+    id: 861,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el cohecho pasivo?",
+    opciones: ["Arts. 419-422", "Art. 424", "Art. 427"],
+    correcta: 0,
+    explicacion: "Pasivo es el cometido por el funcionario (recibir)."
+  },
+  {
+    id: 862,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el cohecho activo?",
+    opciones: ["Artículo 424", "Artículo 419", "Artículo 422"],
+    correcta: 0,
+    explicacion: "Activo es el cometido por el particular (ofrecer)."
+  },
+  {
+    id: 863,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Puede un particular ser autor de malversación?",
+    opciones: ["Sí, si es depositario de caudales públicos (435)", "No, nunca", "Solo si es un hacker"],
+    correcta: 0,
+    explicacion: "Art. 435 CP: Extiende la autoría a particulares en casos específicos."
+  },
+  {
+    id: 864,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el tráfico de influencias por un ex-funcionario?",
+    opciones: ["Artículo 428", "Artículo 429", "No es delito"],
+    correcta: 0,
+    explicacion: "Suele encajar en el 428 si aún mantiene el ascendiente o el 429 como particular."
+  },
+  {
+    id: 865,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué artículo se castiga al funcionario que no auxilia a un ciudadano en peligro?",
+    opciones: ["Artículo 412.3", "Artículo 195", "Artículo 408"],
+    correcta: 0,
+    explicacion: "Art. 412.3 CP: Denegación de auxilio a particulares en situación de peligro."
+  },
+  {
+    id: 866,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga retardar maliciosamente la administración de justicia?",
+    opciones: ["Artículo 446 (Prevaricación judicial)", "Artículo 448", "Artículo 449"],
+    correcta: 0,
+    explicacion: "Aunque esté en el Título XIX, a veces se cruza con el XX."
+  },
+  {
+    id: 867,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué capítulo está el Cohecho?",
+    opciones: ["Capítulo V", "Capítulo VII", "Capítulo IV"],
+    correcta: 0,
+    explicacion: "Capítulo V."
+  },
+  {
+    id: 868,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué capítulo está la Malversación?",
+    opciones: ["Capítulo VII", "Capítulo VI", "Capítulo VIII"],
+    correcta: 0,
+    explicacion: "Capítulo VII."
+  },
+  {
+    id: 869,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la destrucción de un sistema informático público por el propio informático de la entidad?",
+    opciones: ["Artículo 413 (por analogía documental)", "Artículo 264", "Artículo 432"],
+    correcta: 0,
+    explicacion: "Art. 413 CP: Incluye soportes informáticos."
+  },
+  {
+    id: 870,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al funcionario que admite un regalo de 1000€ por su 'buena gestión' sin haber hecho nada ilegal?",
+    opciones: ["Artículo 422", "Artículo 419", "No es delito"],
+    correcta: 0,
+    explicacion: "Cohecho impropio."
+  },
+  {
+    id: 871,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la participación de particulares en fraudes de contratación pública?",
+    opciones: ["Artículo 436", "Artículo 262", "Artículo 432"],
+    correcta: 0,
+    explicacion: "Art. 436 CP."
+  },
+  {
+    id: 872,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al funcionario que abandona su puesto para no reprimir una rebelión?",
+    opciones: ["Artículo 407", "Artículo 409", "Artículo 408"],
+    correcta: 0,
+    explicacion: "Art. 407 CP."
+  },
+  {
+    id: 873,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué artículo se castiga solicitar favores sexuales para sí mismo o para un tercero?",
+    opciones: ["Artículo 443", "Artículo 184", "Artículo 441"],
+    correcta: 0,
+    explicacion: "Art. 443 CP."
+  },
+  {
+    id: 874,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la malversación de bienes muebles o inmuebles?",
+    opciones: ["Artículo 432", "Artículo 433", "Ambos"],
+    correcta: 2,
+    explicacion: "El patrimonio público incluye ambos tipos de bienes."
+  },
+  {
+    id: 875,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al funcionario que no acata una sentencia del Tribunal Constitucional?",
+    opciones: ["Artículo 410", "Artículo 506", "Artículo 412"],
+    correcta: 0,
+    explicacion: "Desobediencia jerárquica o institucional."
+  },
+  {
+    id: 876,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga las exacciones ilegales?",
+    opciones: ["Artículo 437", "Artículo 438", "Artículo 439"],
+    correcta: 0,
+    explicacion: "Art. 437 CP."
+  },
+  {
+    id: 877,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué artículo se castiga al funcionario que impone una multa y se queda el dinero?",
+    opciones: ["Artículo 432 (Malversación)", "Artículo 437", "Artículo 436"],
+    correcta: 0,
+    explicacion: "Apropiación de caudales públicos."
+  },
+  {
+    id: 878,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al funcionario que actúa como perito privado en un caso de su departamento?",
+    opciones: ["Artículo 441", "Artículo 439", "Artículo 440"],
+    correcta: 0,
+    explicacion: "Art. 441 CP: Actividades prohibidas a funcionarios."
+  },
+  {
+    id: 879,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Es punible el cohecho si se acepta un regalo 'habitual' (ej. una caja de bombones)?",
+    opciones: ["No, la jurisprudencia excluye los usos sociales", "Sí, cualquier regalo es delito", "Solo si es un funcionario del Estado"],
+    correcta: 0,
+    explicacion: "Principio de insignificancia y adecuación social."
+  },
+  {
+    id: 880,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo regula la responsabilidad de las personas jurídicas en el tráfico de influencias?",
+    opciones: ["Artículo 430", "Artículo 431", "Artículo 31 bis"],
+    correcta: 1,
+    explicacion: "Art. 431 CP."
+  },
+  {
+    id: 881,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo regula la responsabilidad de las personas jurídicas en el cohecho?",
+    opciones: ["Artículo 427 bis", "Artículo 424", "Artículo 31 bis"],
+    correcta: 0,
+    explicacion: "Art. 427 bis CP."
+  },
+  {
+    id: 882,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo regula la responsabilidad de las personas jurídicas en la malversación?",
+    opciones: ["Artículo 435 bis", "Artículo 432", "Artículo 431"],
+    correcta: 0,
+    explicacion: "Art. 435 bis CP."
+  },
+  {
+    id: 883,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la revelación de secretos de empresa por funcionario?",
+    opciones: ["Artículo 417", "Artículo 418", "Artículo 278"],
+    correcta: 0,
+    explicacion: "Si el secreto se conoció por razón de su cargo."
+  },
+  {
+    id: 884,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el uso de clave de acceso a sistemas oficiales por funcionario?",
+    opciones: ["Artículo 414", "Artículo 413", "Artículo 197"],
+    correcta: 0,
+    explicacion: "Art. 414 CP: Quebrantamiento de custodia de documentos o soportes."
+  },
+  {
+    id: 885,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al funcionario que no impide un acto de tortura?",
+    opciones: ["Artículo 176", "Artículo 408", "Artículo 412"],
+    correcta: 0,
+    explicacion: "Título VII (Tortura), el 176 es el tipo específico."
+  },
+  {
+    id: 886,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la desobediencia de un particular a un funcionario?",
+    opciones: ["Artículo 556", "Artículo 410", "Artículo 172"],
+    correcta: 0,
+    explicacion: "Título XXII (Orden Público)."
+  },
+  {
+    id: 887,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué artículo se castiga la anticipación de funciones públicas?",
+    opciones: ["Artículo 406", "Artículo 405", "Artículo 402"],
+    correcta: 0,
+    explicacion: "Art. 406 CP: Entrar a ejercer el cargo sin los requisitos legales."
+  },
+  {
+    id: 888,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué artículo se castiga la prolongación de funciones públicas?",
+    opciones: ["Artículo 406", "Artículo 405", "Artículo 402"],
+    correcta: 0,
+    explicacion: "Art. 406 CP: Continuar ejerciendo tras cesar legalmente."
+  },
+  {
+    id: 889,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la denegación de auxilio a la Administración de Justicia?",
+    opciones: ["Artículo 412.1", "Artículo 412.3", "Artículo 463"],
+    correcta: 0,
+    explicacion: "Art. 412.1 CP."
+  },
+  {
+    id: 890,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga favorecer el tráfico de influencias por funcionario?",
+    opciones: ["Artículo 428", "Artículo 430", "Artículo 431"],
+    correcta: 0,
+    explicacion: "Art. 428 CP."
+  },
+  {
+    id: 891,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué artículo se menciona el enriquecimiento ilícito de autoridad o funcionario?",
+    opciones: ["Artículo 438 bis", "Artículo 432", "No existe"],
+    correcta: 0,
+    explicacion: "Art. 438 bis CP: Introducido en 2022 para castigar incrementos patrimoniales injustificados superiores a 250.000€."
+  },
+  {
+    id: 892,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué artículo se define 'autoridad' a efectos penales?",
+    opciones: ["Artículo 24.1", "Artículo 404", "Artículo 550"],
+    correcta: 0,
+    explicacion: "Art. 24.1 CP."
+  },
+  {
+    id: 893,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Es punible el cohecho si el funcionario rechaza el regalo pero no lo denuncia?",
+    opciones: ["No es delito para el funcionario", "Sí, es omisión del 408", "Solo si es un superior"],
+    correcta: 0,
+    explicacion: "Si lo rechaza no hay cohecho pasivo. El delito es de quien lo ofrece."
+  },
+  {
+    id: 894,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga a la autoridad que fomenta el abandono del servicio público?",
+    opciones: ["Artículo 409", "Artículo 407", "Artículo 315"],
+    correcta: 0,
+    explicacion: "Art. 409 CP."
+  },
+  {
+    id: 895,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga la prevaricación en la concesión de subvenciones?",
+    opciones: ["Artículo 404 / 308", "Artículo 432", "Artículo 436"],
+    correcta: 0,
+    explicacion: "Se cruza con el fraude de subvenciones (308)."
+  },
+  {
+    id: 896,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga el mal uso de sellos oficiales por funcionario?",
+    opciones: ["Artículo 398", "Artículo 413", "Artículo 437"],
+    correcta: 0,
+    explicacion: "Suele ir por falsedad de certificados o sellos (Título XVIII)."
+  },
+  {
+    id: 897,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué capítulo está el Tráfico de influencias?",
+    opciones: ["Capítulo VI", "Capítulo V", "Capítulo VII"],
+    correcta: 0,
+    explicacion: "Capítulo VI."
+  },
+  {
+    id: 898,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Qué artículo castiga al funcionario que usa el coche oficial para irse de vacaciones?",
+    opciones: ["Artículo 432 bis", "Artículo 433", "No es delito (es falta administrativa)"],
+    correcta: 1,
+    explicacion: "Art. 433 CP: Uso privado de patrimonio público sin ánimo de apropiación."
+  },
+  {
+    id: 899,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿En qué artículo se castiga el cohecho activo cometido por un particular para un acto lícito?",
+    opciones: ["Artículo 424.2", "Artículo 419", "Artículo 422"],
+    correcta: 0,
+    explicacion: "Art. 424.2 CP."
+  },
+  {
+    id: 900,
+    titulo: "Título XIX - Administración Pública",
+    pregunta: "¿Cuál es la última sección del Título XIX?",
+    opciones: ["Capítulo IX (Disposiciones comunes)", "Capítulo VIII", "Capítulo X"],
+    correcta: 0,
+    explicacion: "Capítulo IX."
+  },
+  {
+    id: 901,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al Juez o Magistrado que dicta sentencia injusta a sabiendas (prevaricación judicial)?",
+    opciones: ["Artículo 446", "Artículo 447", "Artículo 448"],
+    correcta: 0,
+    explicacion: "Art. 446 CP: Se distingue si la sentencia es en contra del reo en causa por delito grave o menos grave."
+  },
+  {
+    id: 902,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga la prevaricación judicial cometida por imprudencia grave o ignorancia inexcusable?",
+    opciones: ["Artículo 447", "Artículo 446", "Artículo 448"],
+    correcta: 0,
+    explicacion: "Art. 447 CP: Es la modalidad no dolosa pero penalmente relevante."
+  },
+  {
+    id: 903,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al Juez que se niega a juzgar pretextando oscuridad o insuficiencia de la Ley?",
+    opciones: ["Artículo 448", "Artículo 449", "Artículo 446"],
+    correcta: 0,
+    explicacion: "Art. 448 CP: Denegación de justicia."
+  },
+
+  // --- CAPÍTULO II: OMISIÓN DE LOS DEBERES DE IMPEDIR DELITOS (Arts. 450) ---
+  {
+    id: 904,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al particular que, pudiendo hacerlo sin riesgo, no impide un delito contra la vida, integridad o libertad?",
+    opciones: ["Artículo 450", "Artículo 195", "Artículo 408"],
+    correcta: 0,
+    explicacion: "Art. 450 CP: Es una omisión del deber de impedir delitos específicos, más grave que el socorro genérico."
+  },
+
+  // --- CAPÍTULO III: ENCUBRIMIENTO (Arts. 451-454) ---
+  {
+    id: 905,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo define el encubrimiento (ayudar a eludir la justicia o aprovecharse de los efectos del delito)?",
+    opciones: ["Artículo 451", "Artículo 452", "Artículo 453"],
+    correcta: 0,
+    explicacion: "Art. 451 CP: Requiere que el encubridor no haya participado como autor ni cómplice en el delito previo."
+  },
+  {
+    id: 906,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿En qué artículo se establece la exención de pena para encubridores que sean parientes próximos (cónyuges, ascendientes, hermanos)?",
+    opciones: ["Artículo 454", "Artículo 451", "Artículo 16"],
+    correcta: 0,
+    explicacion: "Art. 454 CP: Excusa absolutoria por lazos de parentesco (excepto si ayudan a aprovecharse de los efectos)."
+  },
+
+  // --- CAPÍTULO IV: REALIZACIÓN ARBITRARIA DEL PROPIO DERECHO (Art. 455) ---
+  {
+    id: 907,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al que, para realizar un derecho propio, actúa fuera de las vías legales empleando violencia, intimidación o fuerza?",
+    opciones: ["Artículo 455", "Artículo 248", "Artículo 172"],
+    correcta: 0,
+    explicacion: "Art. 455 CP: Conocido como 'tomarse la justicia por su mano'."
+  },
+
+  // --- CAPÍTULO V: ACUSACIÓN Y DENUNCIA FALSAS / SIMULACIÓN (Arts. 456-457) ---
+  {
+    id: 908,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga imputar a alguien hechos que constituyan delito ante funcionario judicial con conocimiento de su falsedad?",
+    opciones: ["Artículo 456", "Artículo 457", "Artículo 458"],
+    correcta: 0,
+    explicacion: "Art. 456 CP: Requiere sentencia o auto firme de sobreseimiento previo para proceder contra el denunciante."
+  },
+  {
+    id: 909,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga simular ser responsable o víctima de un delito ante funcionario judicial, provocando actuaciones procesales?",
+    opciones: ["Artículo 457", "Artículo 456", "Artículo 461"],
+    correcta: 0,
+    explicacion: "Art. 457 CP: Simulación de delitos."
+  },
+
+  // --- CAPÍTULO VI: FALSO TESTIMONIO (Arts. 458-462) ---
+  {
+    id: 910,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al testigo que falta a la verdad en su testimonio en causa judicial?",
+    opciones: ["Artículo 458", "Artículo 459", "Artículo 460"],
+    correcta: 0,
+    explicacion: "Art. 458 CP. La pena es mayor si el falso testimonio se da contra el reo en causa criminal."
+  },
+  {
+    id: 911,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Se aplica el falso testimonio a peritos e intérpretes?",
+    opciones: ["Sí, en el artículo 459", "No, ellos tienen otro título", "Solo si cobran por ello"],
+    correcta: 0,
+    explicacion: "Art. 459 CP: Falso testimonio de peritos o intérpretes."
+  },
+  {
+    id: 912,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿En qué artículo se castiga al testigo que no falta a la verdad pero la altera con reticencias o inexactitudes?",
+    opciones: ["Artículo 460", "Artículo 458", "No es delito"],
+    correcta: 0,
+    explicacion: "Art. 460 CP."
+  },
+  {
+    id: 913,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo permite quedar exento de pena si el testigo se retracta a tiempo?",
+    opciones: ["Artículo 462", "Artículo 461", "Artículo 458"],
+    correcta: 0,
+    explicacion: "Art. 462 CP: Retractación antes de que se dicte sentencia en el proceso principal."
+  },
+
+  // --- CAPÍTULO VII: OBSTRUCCIÓN A LA JUSTICIA Y DESLEALTAD PROFESIONAL (Arts. 463-467) ---
+  {
+    id: 914,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga a quien, citado legalmente, deja de comparecer voluntariamente ante el Juzgado?",
+    opciones: ["Artículo 463", "Artículo 410", "Artículo 464"],
+    correcta: 0,
+    explicacion: "Art. 463 CP: Obstrucción a la justicia por incomparecencia."
+  },
+  {
+    id: 915,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga el uso de violencia o intimidación para influir en un testigo o perito?",
+    opciones: ["Artículo 464", "Artículo 465", "Artículo 463"],
+    correcta: 0,
+    explicacion: "Art. 464 CP."
+  },
+  {
+    id: 916,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al abogado que, por negligencia o dolo, perjudica los intereses de su cliente?",
+    opciones: ["Artículo 467", "Artículo 466", "Artículo 465"],
+    correcta: 0,
+    explicacion: "Art. 467 CP: Deslealtad profesional de abogados y procuradores."
+  },
+
+  // --- CAPÍTULO VIII: QUEBRANTAMIENTO DE CONDENA (Arts. 468-471) ---
+  {
+    id: 917,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga a los que quebranten su condena, medida de seguridad o medida cautelar?",
+    opciones: ["Artículo 468", "Artículo 469", "Artículo 470"],
+    correcta: 0,
+    explicacion: "Art. 468 CP. Incluye quebrantar la pulsera de alejamiento o no volver de un permiso."
+  },
+
+  
+
+  {
+    id: 918,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga el quebrantamiento con violencia, intimidación o fuerza en las cosas?",
+    opciones: ["Artículo 469", "Artículo 468", "Artículo 470"],
+    correcta: 0,
+    explicacion: "Art. 469 CP: Fuga de centro penitenciario con violencia o fuerza."
+  },
+  {
+    id: 919,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al particular que ayuda a un condenado a fugarse?",
+    opciones: ["Artículo 470", "Artículo 471", "Artículo 451"],
+    correcta: 0,
+    explicacion: "Art. 470 CP."
+  },
+
+  // --- CAPÍTULO IX: DELITOS CONTRA LA CORTE PENAL INTERNACIONAL (Art. 471 bis) ---
+  {
+    id: 920,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo regula los delitos contra la Administración de Justicia de la Corte Penal Internacional?",
+    opciones: ["Artículo 471 bis", "Artículo 471", "Artículo 472"],
+    correcta: 0,
+    explicacion: "Art. 471 bis CP."
+  },
+
+  // --- REFUERZO DE CONCEPTOS (921-950) ---
+  {
+    id: 921,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Es delito el falso testimonio si se da ante la Policía y no ante el Juez?",
+    opciones: ["Se considera simulación de delito (457) o denuncia falsa (456)", "No es delito", "Es falso testimonio igual"],
+    correcta: 0,
+    explicacion: "El falso testimonio exige sede judicial."
+  },
+  {
+    id: 922,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al Fiscal que comete prevaricación?",
+    opciones: ["Artículo 446 (por asimilación)", "Artículo 404 (Admin. Pública)", "Artículo 449"],
+    correcta: 0,
+    explicacion: "Aunque se ubique en prevaricación judicial, los miembros del Ministerio Fiscal están sujetos a tipos similares."
+  },
+  {
+    id: 923,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga la destrucción de pruebas por parte de un abogado?",
+    opciones: ["Artículo 465", "Artículo 467", "Artículo 451"],
+    correcta: 0,
+    explicacion: "Art. 465 CP: Destrucción de documentos o actuaciones judiciales."
+  },
+  {
+    id: 924,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga revelar actuaciones judiciales declaradas secretas?",
+    opciones: ["Artículo 466", "Artículo 417", "Artículo 197"],
+    correcta: 0,
+    explicacion: "Art. 466 CP: Revelación de secretos por abogado, procurador o funcionario judicial."
+  },
+  {
+    id: 925,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿En qué artículo se castiga proponer a un testigo que mienta (presentación de testigos falsos)?",
+    opciones: ["Artículo 461", "Artículo 458", "Artículo 464"],
+    correcta: 0,
+    explicacion: "Art. 461 CP: Presentación a sabiendas de testigos falsos o peritos mendaces."
+  },
+  {
+    id: 926,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al funcionario de prisiones que ayuda a un preso a fugarse?",
+    opciones: ["Artículo 471", "Artículo 470", "Artículo 468"],
+    correcta: 0,
+    explicacion: "Art. 471 CP: Agravante por ser encargado de la custodia."
+  },
+  {
+    id: 927,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Es punible el quebrantamiento de condena si la sentencia no es firme?",
+    opciones: ["Sí, el 468 incluye medidas cautelares", "No, debe ser sentencia firme", "Solo si es prisión"],
+    correcta: 0,
+    explicacion: "Art. 468 CP: Incluye la desobediencia de medidas cautelares (ej. alejamiento en vigor)."
+  },
+  {
+    id: 928,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al que no denuncia un delito de terrorismo conociéndolo?",
+    opciones: ["Artículo 450.2", "Artículo 571", "Artículo 408"],
+    correcta: 0,
+    explicacion: "Omisión del deber de impedir delitos específicos."
+  },
+  {
+    id: 929,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al que destruye un expediente judicial de forma accidental?",
+    opciones: ["No es delito (requiere dolo o imprudencia grave)", "Artículo 465", "Artículo 263"],
+    correcta: 0,
+    explicacion: "El 465 requiere dolo ('a sabiendas')."
+  },
+  {
+    id: 930,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿En qué capítulo está el Encubrimiento?",
+    opciones: ["Capítulo III", "Capítulo II", "Capítulo IV"],
+    correcta: 0,
+    explicacion: "Capítulo III."
+  },
+  {
+    id: 931,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿En qué capítulo está el Falso Testimonio?",
+    opciones: ["Capítulo VI", "Capítulo V", "Capítulo VII"],
+    correcta: 0,
+    explicacion: "Capítulo VI."
+  },
+  {
+    id: 932,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿En qué capítulo está el Quebrantamiento de condena?",
+    opciones: ["Capítulo VIII", "Capítulo VII", "Capítulo IX"],
+    correcta: 0,
+    explicacion: "Capítulo VIII."
+  },
+  {
+    id: 933,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Cuál es la pena para el abogado que defiende a ambas partes en un mismo pleito?",
+    opciones: ["Prisión e inhabilitación (Art. 467.1)", "Solo multa", "Solo expulsión del colegio"],
+    correcta: 0,
+    explicacion: "Prevaricación de abogado o procurador."
+  },
+  {
+    id: 934,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga la amenaza a un miembro del Jurado?",
+    opciones: ["Artículo 464", "Artículo 169", "Artículo 446"],
+    correcta: 0,
+    explicacion: "Obstrucción a la justicia."
+  },
+  {
+    id: 935,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Se puede cometer denuncia falsa por imprudencia?",
+    opciones: ["No, requiere conocimiento de su falsedad y temerario desprecio a la verdad", "Sí", "Solo si es contra un policía"],
+    correcta: 0,
+    explicacion: "Es un delito eminentemente doloso."
+  },
+  {
+    id: 936,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al perito que miente sobre el valor de una finca en un juicio?",
+    opciones: ["Artículo 459", "Artículo 458", "Artículo 397"],
+    correcta: 0,
+    explicacion: "Falso testimonio de peritos."
+  },
+  {
+    id: 937,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Es punible el encubrimiento de un hurto de 200€?",
+    opciones: ["No, solo se encubren delitos (no faltas/delitos leves de esta cuantía)", "Sí", "Solo si el autor es pariente"],
+    correcta: 0,
+    explicacion: "El 451 se refiere a delitos, pero la jurisprudencia matiza la gravedad."
+  },
+  {
+    id: 938,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al que ayuda a un delincuente a ocultar el cadáver?",
+    opciones: ["Artículo 451.2", "Artículo 451.1", "Artículo 451.3"],
+    correcta: 2,
+    explicacion: "Ayudar a ocultar o destruir las pruebas o instrumentos del delito."
+  },
+  {
+    id: 939,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿En qué artículo se castiga la acusación falsa de un delito leve?",
+    opciones: ["Artículo 456.1.3º", "Artículo 456.1.1º", "No es delito"],
+    correcta: 0,
+    explicacion: "La denuncia falsa gradúa la pena según la gravedad del delito imputado."
+  },
+  {
+    id: 940,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga la simulación de ser víctima de una agresión inexistente?",
+    opciones: ["Artículo 457", "Artículo 456", "Artículo 172"],
+    correcta: 0,
+    explicacion: "Simulación de delito."
+  },
+  {
+    id: 941,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al intérprete que traduce mal a propósito en un juicio?",
+    opciones: ["Artículo 459", "Artículo 460", "Artículo 458"],
+    correcta: 0,
+    explicacion: "Falso testimonio de intérpretes."
+  },
+  {
+    id: 942,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al particular que se niega a confesar dónde ocultó el botín un tercero?",
+    opciones: ["No es delito (no hay deber de declarar contra parientes o el 451 no obliga a confesar)", "Artículo 451", "Artículo 463"],
+    correcta: 0,
+    explicacion: "El encubrimiento es una conducta positiva de ayuda, no una omisión de denuncia general."
+  },
+  {
+    id: 943,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga a quien rompe los precintos de un juzgado?",
+    opciones: ["Artículo 468", "Artículo 556", "Artículo 263"],
+    correcta: 0,
+    explicacion: "Quebrantamiento de medida cautelar o condena."
+  },
+  {
+    id: 944,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga proponer a un perito una suma de dinero para que cambie su informe?",
+    opciones: ["Artículo 461 (en relación con el 459)", "Artículo 424 (Cohecho)", "Artículo 464"],
+    correcta: 0,
+    explicacion: "Presentación de peritos mendaces."
+  },
+  {
+    id: 945,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga la 'autodenuncia' falsa?",
+    opciones: ["Artículo 457", "Artículo 456", "No es delito"],
+    correcta: 0,
+    explicacion: "Simulación de delito (hacerse pasar por autor)."
+  },
+  {
+    id: 946,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Qué artículo castiga al procurador que revela secretos del juicio?",
+    opciones: ["Artículo 466", "Artículo 467", "Artículo 199"],
+    correcta: 0,
+    explicacion: "Art. 466 CP."
+  },
+  {
+    id: 947,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿En qué artículo se castiga al Juez que retrasa maliciosamente un proceso?",
+    opciones: ["Artículo 449", "Artículo 448", "Artículo 446"],
+    correcta: 0,
+    explicacion: "Retardo malicioso en la administración de justicia."
+  },
+  {
+    id: 948,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿En qué artículo se castiga al que recupera su coche del depósito municipal por la fuerza?",
+    opciones: ["Artículo 455", "Artículo 234", "Artículo 550"],
+    correcta: 0,
+    explicacion: "Realización arbitraria del propio derecho."
+  },
+  {
+    id: 949,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Cuál es el último artículo de este Título?",
+    opciones: ["Artículo 471 bis", "Artículo 471", "Artículo 472"],
+    correcta: 0,
+    explicacion: "Referido a la Corte Penal Internacional."
+  },
+  {
+    id: 950,
+    titulo: "Título XX - Administración de Justicia",
+    pregunta: "¿Cómo se llama el Título XX?",
+    opciones: ["De los delitos contra la Administración de Justicia", "Del poder judicial", "De los juicios y delitos"],
+    correcta: 0,
+    explicacion: "Rúbrica oficial."
+  },
+  {
+    id: 951,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga el homicidio del Rey o de la Reina?",
+    opciones: ["Artículo 485", "Artículo 486", "Artículo 138"],
+    correcta: 0,
+    explicacion: "Art. 485 CP: Es un tipo específico que conlleva la pena de prisión permanente revisable."
+  },
+  {
+    id: 952,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga las calumnias e injurias contra el Rey o sus ascendientes/descendientes?",
+    opciones: ["Artículo 490.3", "Artículo 491", "Artículo 205"],
+    correcta: 1,
+    explicacion: "Art. 491 CP: Delitos contra el prestigio de la Corona."
+  },
+
+  // --- CAPÍTULO II: INSTITUCIONES DEL ESTADO Y DIVISIÓN DE PODERES (Arts. 492-505) ---
+  {
+    id: 953,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga a quienes invadan violentamente las sedes del Congreso de los Diputados o el Senado?",
+    opciones: ["Artículo 493", "Artículo 494", "Artículo 495"],
+    correcta: 0,
+    explicacion: "Art. 493 CP: Delito contra las Instituciones del Estado."
+  },
+  {
+    id: 954,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga a quienes promuevan manifestaciones ante las sedes legislativas cuando estén reunidas?",
+    opciones: ["Artículo 494", "Artículo 495", "Artículo 514"],
+    correcta: 0,
+    explicacion: "Art. 494 CP: Si con ello se altera su normal funcionamiento."
+  },
+  {
+    id: 955,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la perturbación grave del orden de las sesiones del Tribunal Constitucional?",
+    opciones: ["Artículo 504", "Artículo 503", "Artículo 505"],
+    correcta: 0,
+    explicacion: "Art. 504 CP: También incluye al Consejo General del Poder Judicial."
+  },
+
+  // --- CAPÍTULO III: DERECHOS FUNDAMENTALES Y LIBERTADES PÚBLICAS (Arts. 510-521) ---
+  {
+    id: 956,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo regula los 'Delitos de Odio' (fomentar la hostilidad contra grupos por racismo, religión, etc.)?",
+    opciones: ["Artículo 510", "Artículo 511", "Artículo 512"],
+    correcta: 0,
+    explicacion: "Art. 510 CP: Es uno de los artículos más reformados y aplicados recientemente."
+  },
+  {
+    id: 957,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al particular encargado de un servicio público que deniegue una prestación por discriminación?",
+    opciones: ["Artículo 511", "Artículo 510", "Artículo 512"],
+    correcta: 0,
+    explicacion: "Art. 511 CP."
+  },
+  {
+    id: 958,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga a quien impida a un miembro de una confesión religiosa practicar sus actos de culto?",
+    opciones: ["Artículo 523", "Artículo 522", "Artículo 524"],
+    correcta: 1,
+    explicacion: "Art. 522 CP: Libertad de conciencia y religiosa."
+  },
+  {
+    id: 959,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la profanación en templos o lugares destinados al culto?",
+    opciones: ["Artículo 524", "Artículo 523", "Artículo 525"],
+    correcta: 0,
+    explicacion: "Art. 524 CP: Ofensa a los sentimientos religiosos."
+  },
+
+  // --- CAPÍTULO IV: DEBERES E INFACCIONES DE FUNCIONARIOS CONTRA GARANTÍAS (Arts. 529-542) ---
+  {
+    id: 960,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que impida a una persona el ejercicio de otros derechos cívicos?",
+    opciones: ["Artículo 542", "Artículo 540", "Artículo 541"],
+    correcta: 0,
+    explicacion: "Art. 542 CP: Cláusula de cierre para proteger derechos constitucionales no específicos."
+  },
+  {
+    id: 961,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que intercepta correo o telecomunicaciones fuera de los casos permitidos?",
+    opciones: ["Artículo 534", "Artículo 535", "Artículo 536"],
+    correcta: 2,
+    explicacion: "Art. 536 CP: Violación de la inviolabilidad de las comunicaciones por funcionario."
+  },
+
+  
+
+  {
+    id: 962,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que prohíba una reunión lícita o la disuelva sin causa?",
+    opciones: ["Artículo 540", "Artículo 539", "Artículo 538"],
+    correcta: 0,
+    explicacion: "Art. 540 CP."
+  },
+  {
+    id: 963,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que entra en domicilio particular sin consentimiento ni resolución judicial?",
+    opciones: ["Artículo 534", "Artículo 204", "Artículo 535"],
+    correcta: 0,
+    explicacion: "Art. 534 CP: Delitos contra la inviolabilidad del domicilio por funcionario."
+  },
+  {
+    id: 964,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿En qué artículo se castiga la asociación ilícita?",
+    opciones: ["Artículo 515", "Artículo 517", "Artículo 520"],
+    correcta: 0,
+    explicacion: "Art. 515 CP: Asociaciones que tengan por objeto cometer delitos o empleen medios violentos."
+  },
+  {
+    id: 965,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga el ultraje a la bandera de España o de las Comunidades Autónomas?",
+    opciones: ["Artículo 543", "Artículo 544", "Artículo 525"],
+    correcta: 0,
+    explicacion: "Art. 543 CP: Ofensas o ultrajes a España, sus Comunidades o sus símbolos."
+  },
+  {
+    id: 966,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que dilata injustificadamente la puesta en libertad de un detenido?",
+    opciones: ["Artículo 530", "Artículo 531", "Artículo 167"],
+    correcta: 0,
+    explicacion: "Art. 530 CP: Delitos cometidos por funcionarios contra la libertad individual."
+  },
+  {
+    id: 967,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga el impedimento de la libertad de prensa por parte de un funcionario?",
+    opciones: ["Artículo 538", "Artículo 537", "Artículo 539"],
+    correcta: 0,
+    explicacion: "Art. 538 CP."
+  },
+  {
+    id: 968,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿En qué artículo se regulan las reuniones y manifestaciones ilícitas?",
+    opciones: ["Artículo 513", "Artículo 514", "Ambos"],
+    correcta: 2,
+    explicacion: "El 513 define cuáles son ilícitas y el 514 las penas para promotores."
+  },
+  {
+    id: 969,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que somete a un detenido a un régimen de rigor innecesario?",
+    opciones: ["Artículo 533", "Artículo 532", "Artículo 174"],
+    correcta: 0,
+    explicacion: "Art. 533 CP."
+  },
+  {
+    id: 970,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la perturbación de actos religiosos?",
+    opciones: ["Artículo 523", "Artículo 524", "Artículo 525"],
+    correcta: 0,
+    explicacion: "Art. 523 CP: Con violencia, amenaza o tumulto."
+  },
+  {
+    id: 971,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga el escarnio público de dogmas o creencias religiosas?",
+    opciones: ["Artículo 525", "Artículo 524", "Artículo 523"],
+    correcta: 0,
+    explicacion: "Art. 525 CP."
+  },
+  {
+    id: 972,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que establece la censura previa fuera de los casos permitidos?",
+    opciones: ["Artículo 538", "Artículo 537", "Artículo 404"],
+    correcta: 0,
+    explicacion: "Art. 538 CP."
+  },
+  {
+    id: 973,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Es punible la provocación a la discriminación?",
+    opciones: ["Sí, en el artículo 510.1", "No, solo el acto", "Solo si es funcionario"],
+    correcta: 0,
+    explicacion: "El 510 incluye la provocación al odio o discriminación."
+  },
+  {
+    id: 974,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la denegación del derecho de huelga por funcionario?",
+    opciones: ["Artículo 537", "Artículo 315", "Artículo 542"],
+    correcta: 0,
+    explicacion: "Art. 537 CP."
+  },
+  {
+    id: 975,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la pertenencia a una asociación secreta de carácter paramilitar?",
+    opciones: ["Artículo 515.2º", "Artículo 515.1º", "Artículo 516"],
+    correcta: 0,
+    explicacion: "Art. 515 CP."
+  },
+  {
+    id: 976,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que acuerda la expulsión de un extranjero fuera de los casos legales?",
+    opciones: ["Artículo 531", "Artículo 530", "Artículo 318 bis"],
+    correcta: 0,
+    explicacion: "Art. 531 CP."
+  },
+  {
+    id: 977,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Cuál es la pena para quien matare al Príncipe de Asturias?",
+    opciones: ["La misma que al Rey (Prisión permanente revisable)", "Prisión de 20 a 25 años", "Prisión de 15 a 20 años"],
+    correcta: 0,
+    explicacion: "Art. 485 CP: Protege igual al Rey y al Heredero de la Corona."
+  },
+  {
+    id: 978,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la incomparecencia de un Ministro ante una Comisión de Investigación parlamentaria?",
+    opciones: ["Artículo 502", "Artículo 501", "Artículo 463"],
+    correcta: 0,
+    explicacion: "Art. 502 CP: Desobediencia a las Cámaras Legislativas."
+  },
+  {
+    id: 979,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga el allanamiento de las sedes de las Asambleas Legislativas de las CCAA?",
+    opciones: ["Artículo 505", "Artículo 493", "Artículo 504"],
+    correcta: 0,
+    explicacion: "Art. 505 CP."
+  },
+  {
+    id: 980,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la coacción a un Diputado para que no asista a las sesiones?",
+    opciones: ["Artículo 498", "Artículo 497", "Artículo 499"],
+    correcta: 0,
+    explicacion: "Art. 498 CP."
+  },
+  {
+    id: 981,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga interrumpir un acto de culto religioso de forma violenta?",
+    opciones: ["Artículo 523", "Artículo 524", "Artículo 514"],
+    correcta: 0,
+    explicacion: "Art. 523 CP."
+  },
+  {
+    id: 982,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que no entrega información al Defensor del Pueblo?",
+    opciones: ["Artículo 502.2", "Artículo 412", "Artículo 410"],
+    correcta: 0,
+    explicacion: "Art. 502.2 CP: Obstrucción a sus funciones."
+  },
+  {
+    id: 983,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la injuria a las instituciones del Estado (Ejército, CCAA)?",
+    opciones: ["Artículo 504", "Artículo 505", "Artículo 491"],
+    correcta: 0,
+    explicacion: "Art. 504 CP."
+  },
+  {
+    id: 984,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que registre el equipaje de una persona sin causa?",
+    opciones: ["Artículo 534.1.2º", "Artículo 534.2", "Artículo 197"],
+    correcta: 0,
+    explicacion: "Art. 534 CP."
+  },
+  {
+    id: 985,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿En qué artículo se castiga obligar a otro a confesar su ideología política?",
+    opciones: ["Artículo 522.1º", "Artículo 523", "Artículo 172"],
+    correcta: 0,
+    explicacion: "Art. 522 CP."
+  },
+  {
+    id: 986,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la exaltación del genocidio?",
+    opciones: ["Artículo 510.1.c", "Artículo 607", "Artículo 510.2"],
+    correcta: 0,
+    explicacion: "Dentro de los delitos de odio."
+  },
+  {
+    id: 987,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la disolución de las asociaciones ilícitas?",
+    opciones: ["Artículo 520", "Artículo 519", "Artículo 521"],
+    correcta: 0,
+    explicacion: "Art. 520 CP: Consecuencias accesorias como la disolución."
+  },
+  {
+    id: 988,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la 'apología' del odio?",
+    opciones: ["Artículo 510", "Artículo 18", "Artículo 515"],
+    correcta: 0,
+    explicacion: "Art. 510 CP."
+  },
+  {
+    id: 989,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿En qué capítulo está la Corona?",
+    opciones: ["Capítulo I", "Capítulo III", "Capítulo IV"],
+    correcta: 0,
+    explicacion: "Capítulo I."
+  },
+  {
+    id: 990,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la entrada en los locales del Consejo de Ministros sin autorización?",
+    opciones: ["Artículo 503", "Artículo 504", "Artículo 493"],
+    correcta: 0,
+    explicacion: "Art. 503 CP."
+  },
+  {
+    id: 991,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga las amenazas graves al Rey?",
+    opciones: ["Artículo 485", "Artículo 490.2", "Artículo 169"],
+    correcta: 1,
+    explicacion: "Art. 490.2 CP."
+  },
+  {
+    id: 992,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al funcionario que impide la presentación de una candidatura electoral?",
+    opciones: ["Artículo 542", "Ley Orgánica del Régimen Electoral General", "Artículo 502"],
+    correcta: 1,
+    explicacion: "Ojo: Los delitos electorales están en la LOREG, pero el 542 CP es residual."
+  },
+  {
+    id: 993,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿En qué artículo se castiga el uso de símbolos discriminatorios?",
+    opciones: ["Artículo 510", "Artículo 543", "Artículo 512"],
+    correcta: 0,
+    explicacion: "Art. 510 CP."
+  },
+  {
+    id: 994,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga vulnerar el secreto de las actas de una Comisión de Investigación?",
+    opciones: ["Artículo 502.3", "Artículo 417", "Artículo 466"],
+    correcta: 0,
+    explicacion: "Art. 502.3 CP."
+  },
+  {
+    id: 995,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga al particular que se niega a disolver una reunión ilícita tras orden de la autoridad?",
+    opciones: ["Artículo 514.4", "Artículo 556", "Artículo 513"],
+    correcta: 0,
+    explicacion: "Art. 514.4 CP."
+  },
+  {
+    id: 996,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga el proselitismo ilícito?",
+    opciones: ["Artículo 522", "Artículo 515", "No es delito"],
+    correcta: 0,
+    explicacion: "Art. 522 CP."
+  },
+  {
+    id: 997,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Cómo se llama el Título XXI?",
+    opciones: ["Delitos contra la Constitución", "Delitos contra el Estado", "De los derechos y deberes"],
+    correcta: 0,
+    explicacion: "Rúbrica oficial."
+  },
+  {
+    id: 998,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Qué artículo castiga la pertenencia a una asociación que fomente el odio?",
+    opciones: ["Artículo 515.4º", "Artículo 510", "Artículo 512"],
+    correcta: 0,
+    explicacion: "Art. 515.4º CP."
+  },
+  {
+    id: 999,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿En qué artículo se castiga a la autoridad que suspende derechos constitucionales fuera de los casos de excepción?",
+    opciones: ["Artículo 541", "Artículo 540", "Artículo 542"],
+    correcta: 0,
+    explicacion: "Art. 541 CP."
+  },
+  {
+    id: 1000,
+    titulo: "Título XXI - Constitución",
+    pregunta: "¿Cuál es el último artículo de los delitos cometidos por funcionarios contra las garantías constitucionales?",
+    opciones: ["Artículo 542", "Artículo 543", "Artículo 544"],
+    correcta: 0,
+    explicacion: "Art. 542 CP: Cláusula de cierre sobre derechos cívicos."
+  },
+  {
+    id: 1001,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "Tras la reforma de 2022, ¿qué artículo regula los desórdenes públicos agravados que sustituyeron a la sedición?",
+    opciones: ["Artículo 557", "Artículo 544", "Artículo 559"],
+    correcta: 0,
+    explicacion: "El antiguo delito de sedición fue derogado y sus conductas se integraron, en parte, en el 557."
+  },
+
+  // --- CAPÍTULO II: ATENTADOS, RESISTENCIA Y DESOBEDIENCIA (Arts. 550-556) ---
+  {
+    id: 1002,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo define el atentado contra la autoridad, sus agentes y los funcionarios públicos?",
+    opciones: ["Artículo 550", "Artículo 551", "Artículo 556"],
+    correcta: 0,
+    explicacion: "Art. 550 CP: Requiere acometimiento, empleo de fuerza, intimidación grave o resistencia activa grave."
+  },
+  {
+    id: 1003,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo establece las penas agravadas para el atentado (ej. uso de armas o embestida con vehículo)?",
+    opciones: ["Artículo 551", "Artículo 552", "Artículo 550.2"],
+    correcta: 0,
+    explicacion: "Art. 551 CP: Contiene los subtipos agravados del atentado."
+  },
+
+  
+
+  {
+    id: 1004,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la resistencia grave y la desobediencia grave a la autoridad?",
+    opciones: ["Artículo 556", "Artículo 550", "Artículo 554"],
+    correcta: 0,
+    explicacion: "Art. 556 CP: Diferencia la resistencia (activa no grave) de la desobediencia (pasiva grave)."
+  },
+  {
+    id: 1005,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿En qué artículo se castiga el atentado contra miembros del personal sanitario o docente en el ejercicio de sus funciones?",
+    opciones: ["Artículo 550.1", "Artículo 554", "Artículo 404"],
+    correcta: 0,
+    explicacion: "Art. 550.1 CP: Se les otorga el carácter de autoridad a efectos de este artículo."
+  },
+
+  // --- CAPÍTULO III: DESÓRDENES PÚBLICOS (Arts. 557-561) ---
+  {
+    id: 1006,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga a quienes actúen en grupo para atentar contra la paz pública ejecutando actos de violencia?",
+    opciones: ["Artículo 557", "Artículo 558", "Artículo 559"],
+    correcta: 0,
+    explicacion: "Art. 557 CP: Tipo básico de desórdenes públicos."
+  },
+  {
+    id: 1007,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la difusión de mensajes que inciten a la comisión de desórdenes públicos?",
+    opciones: ["Artículo 559", "Artículo 557", "Artículo 510"],
+    correcta: 0,
+    explicacion: "Art. 559 CP."
+  },
+  {
+    id: 1008,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga afirmar falsamente la existencia de una bomba provocando la movilización de servicios de emergencia?",
+    opciones: ["Artículo 561", "Artículo 560", "Artículo 557"],
+    correcta: 0,
+    explicacion: "Art. 561 CP: Delito de falsa alarma."
+  },
+
+  // --- CAPÍTULO IV: TENENCIA, TRÁFICO Y DEPÓSITO DE ARMAS Y MUNICIONES (Arts. 563-570) ---
+  {
+    id: 1009,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la tenencia de armas prohibidas?",
+    opciones: ["Artículo 563", "Artículo 564", "Artículo 565"],
+    correcta: 0,
+    explicacion: "Art. 563 CP: Se refiere a armas modificadas o expresamente prohibidas por el Reglamento de Armas."
+  },
+  {
+    id: 1010,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la tenencia de armas de fuego reglamentadas careciendo de licencia?",
+    opciones: ["Artículo 564", "Artículo 563", "Artículo 566"],
+    correcta: 0,
+    explicacion: "Art. 564 CP."
+  },
+
+  // --- CAPÍTULO VI: TERRORISMO (Arts. 571-580 bis) ---
+  {
+    id: 1011,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo define la organización o grupo terrorista?",
+    opciones: ["Artículo 571", "Artículo 572", "Artículo 570 bis"],
+    correcta: 0,
+    explicacion: "Art. 571 CP remite a la definición de organización criminal pero con fines terroristas."
+  },
+  {
+    id: 1012,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el adoctrinamiento o adiestramiento militar o de combate con fines terroristas?",
+    opciones: ["Artículo 575", "Artículo 574", "Artículo 576"],
+    correcta: 0,
+    explicacion: "Art. 575 CP. Incluye el autoadiestramiento por internet (lobos solitarios)."
+  },
+  {
+    id: 1013,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el enaltecimiento o la humillación de las víctimas del terrorismo?",
+    opciones: ["Artículo 578", "Artículo 579", "Artículo 510"],
+    correcta: 0,
+    explicacion: "Art. 578 CP."
+  },
+
+  // --- REPASO TÉCNICO ---
+  {
+    id: 1014,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Se considera atentado la resistencia pasiva grave (ej. sentada persistente)?",
+    opciones: ["No, es desobediencia del 556", "Sí, si dura más de 2 horas", "Sí, siempre"],
+    correcta: 0,
+    explicacion: "La jurisprudencia exige un 'vis física' (fuerza) mínima para el atentado; si es pasiva, es desobediencia."
+  },
+  {
+    id: 1015,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el depósito de armas de guerra?",
+    opciones: ["Artículo 567", "Artículo 566", "Artículo 568"],
+    correcta: 0,
+    explicacion: "Art. 567 CP."
+  },
+  {
+    id: 1016,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿En qué artículo se castiga la financiación del terrorismo?",
+    opciones: ["Artículo 576", "Artículo 576 bis", "Artículo 572"],
+    correcta: 0,
+    explicacion: "Art. 576 CP."
+  },
+  {
+    id: 1017,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga a quienes viajen al extranjero para unirse a un grupo terrorista?",
+    opciones: ["Artículo 575.3", "Artículo 572", "Artículo 574"],
+    correcta: 0,
+    explicacion: "Introducido para combatir a los 'Foreign Terrorist Fighters'."
+  },
+  {
+    id: 1018,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿En qué capítulo está la 'Organización Criminal'?",
+    opciones: ["Capítulo VI (Sección 1)", "Capítulo V", "Capítulo VII"],
+    correcta: 1,
+    explicacion: "Capítulo VI bis (570 bis) y Capítulo VI ter (570 ter)."
+  },
+  {
+    id: 1019,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué diferencia el grupo criminal (570 ter) de la organización criminal (570 bis)?",
+    opciones: ["La estabilidad y la distribución de tareas", "El número de personas", "El tipo de delitos"],
+    correcta: 0,
+    explicacion: "La organización requiere estructura estable; el grupo es para unión puntual sin esa complejidad."
+  },
+  {
+    id: 1020,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿En qué artículo se castiga el uso de una bandera falsa en un buque para realizar actos de piratería?",
+    opciones: ["Artículo 616 ter", "Artículo 561", "No existe"],
+    correcta: 0,
+    explicacion: "La piratería está en el Título XXIV, pero a veces se confunde con desórdenes."
+  },
+  {
+    id: 1021,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el depósito de armas de guerra?",
+    opciones: ["Artículo 567", "Artículo 566", "Artículo 568"],
+    correcta: 0,
+    explicacion: "Art. 567 CP: Se considera depósito la tenencia de armas de guerra, incluso si es una sola."
+  },
+  {
+    id: 1022,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el tráfico de armas de fuego o de municiones?",
+    opciones: ["Artículo 566", "Artículo 564", "Artículo 568"],
+    correcta: 0,
+    explicacion: "Art. 566 CP: Castiga la fabricación, comercialización o tráfico ilícito."
+  },
+  {
+    id: 1023,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el depósito de sustancias explosivas o inflamables?",
+    opciones: ["Artículo 568", "Artículo 569", "Artículo 570"],
+    correcta: 0,
+    explicacion: "Art. 568 CP: Incluye sustancias incendiarias o asfixiantes."
+  },
+  {
+    id: 1024,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo permite al Juez reducir la pena en un grado si el poseedor de armas no tenía intención de usarlas para fines ilícitos?",
+    opciones: ["Artículo 565", "Artículo 563", "Artículo 570"],
+    correcta: 0,
+    explicacion: "Art. 565 CP: Atenuante por falta de intención delictiva específica."
+  },
+
+  // --- CAPÍTULO VI: ORGANIZACIONES Y GRUPOS CRIMINALES ---
+  {
+    id: 1025,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo define la organización criminal?",
+    opciones: ["Artículo 570 bis", "Artículo 570 ter", "Artículo 571"],
+    correcta: 0,
+    explicacion: "Art. 570 bis CP: Requiere estructura, estabilidad y reparto de tareas."
+  },
+  {
+    id: 1026,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo define el grupo criminal?",
+    opciones: ["Artículo 570 ter", "Artículo 570 bis", "Artículo 570 quáter"],
+    correcta: 0,
+    explicacion: "Art. 570 ter CP: Unión de más de dos personas que no reúne las características de organización."
+  },
+  {
+    id: 1027,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo prevé la responsabilidad de las personas jurídicas en delitos de organización criminal?",
+    opciones: ["Artículo 570 quáter", "Artículo 570 bis", "Artículo 31 bis"],
+    correcta: 0,
+    explicacion: "Art. 570 quáter CP."
+  },
+
+  // --- CAPÍTULO VII: TERRORISMO (Desglose detallado) ---
+  {
+    id: 1028,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga a quienes promuevan o dirijan una organización terrorista?",
+    opciones: ["Artículo 572.1", "Artículo 571", "Artículo 573"],
+    correcta: 0,
+    explicacion: "Art. 572.1 CP."
+  },
+  {
+    id: 1029,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo define los fines que convierten un delito común en terrorismo?",
+    opciones: ["Artículo 573", "Artículo 571", "Artículo 572"],
+    correcta: 0,
+    explicacion: "Art. 573 CP: Ej. subvertir el orden constitucional o desestabilizar instituciones."
+  },
+  {
+    id: 1030,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el apoderamiento de aeronaves o buques con fines terroristas?",
+    opciones: ["Artículo 573 bis.1.1º", "Artículo 573", "Artículo 574"],
+    correcta: 0,
+    explicacion: "Art. 573 bis CP: Tipos específicos de delitos terroristas."
+  },
+  {
+    id: 1031,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el depósito de armas o municiones para fines terroristas?",
+    opciones: ["Artículo 574", "Artículo 568", "Artículo 575"],
+    correcta: 0,
+    explicacion: "Art. 574 CP."
+  },
+  {
+    id: 1032,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el adiestramiento pasivo (recibir formación) por medios electrónicos?",
+    opciones: ["Artículo 575.2", "Artículo 575.1", "Artículo 576"],
+    correcta: 0,
+    explicacion: "Art. 575.2 CP: Acceso habitual a contenidos que inciten al terrorismo."
+  },
+  {
+    id: 1033,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la colaboración con bandas terroristas?",
+    opciones: ["Artículo 577", "Artículo 576", "Artículo 578"],
+    correcta: 0,
+    explicacion: "Art. 577 CP: Proporcionar información, vigilancia u otros medios."
+  },
+  {
+    id: 1034,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo prevé penas por la comisión de delitos de terrorismo fuera de España?",
+    opciones: ["Artículo 580", "Artículo 579 bis", "Artículo 571"],
+    correcta: 0,
+    explicacion: "Art. 580 CP: Principio de justicia universal o extraterritorialidad."
+  },
+  {
+    id: 1035,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la difusión de mensajes que inciten a cometer delitos de terrorismo?",
+    opciones: ["Artículo 579", "Artículo 578", "Artículo 575"],
+    correcta: 0,
+    explicacion: "Art. 579 CP: Provocación, conspiración y proposición."
+  },
+
+  // --- ATENTADO Y DESÓRDENES (Casos prácticos) ---
+  {
+    id: 1036,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga los desórdenes cometidos en establecimientos públicos o transportes?",
+    opciones: ["Artículo 558", "Artículo 557", "Artículo 560"],
+    correcta: 0,
+    explicacion: "Art. 558 CP."
+  },
+  {
+    id: 1037,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la interrupción de comunicaciones ferroviarias o telecomunicaciones?",
+    opciones: ["Artículo 560", "Artículo 557", "Artículo 559"],
+    correcta: 0,
+    explicacion: "Art. 560 CP."
+  },
+  {
+    id: 1038,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el atentado cometido contra un militar que esté cumpliendo misiones de seguridad?",
+    opciones: ["Artículo 550", "Artículo 554", "Código Penal Militar"],
+    correcta: 0,
+    explicacion: "Se aplica el 550 CP al considerarlos agentes de la autoridad en esas funciones."
+  },
+  {
+    id: 1039,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Cuál es la pena máxima para el atentado si se hace uso de armas de fuego?",
+    opciones: ["Prisión de 1 a 6 años", "Prisión de 4 a 6 años", "Prisión de 2 a 4 años"],
+    correcta: 1,
+    explicacion: "Art. 551 CP: Subtipo muy agravado."
+  },
+  {
+    id: 1040,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga al particular que desobedece gravemente a la seguridad privada?",
+    opciones: ["Artículo 556.2", "Artículo 556.1", "Artículo 550"],
+    correcta: 0,
+    explicacion: "Art. 556.2 CP: Se refiere a personal de seguridad privada que coopere con las FCSE."
+  },
+
+  // --- CONTINUACIÓN DEL BLOQUE HASTA 1060 ---
+  {
+    id: 1041,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la fabricación de explosivos sin autorización?",
+    opciones: ["Artículo 568", "Artículo 566", "Artículo 567"],
+    correcta: 1,
+    explicacion: "Incluido en las conductas de fabricación ilícita (566)."
+  },
+  {
+    id: 1042,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el uso de disfraces en la comisión de desórdenes públicos?",
+    opciones: ["Artículo 557 bis", "Artículo 557", "Artículo 22.2 (Agravante genérica)"],
+    correcta: 0,
+    explicacion: "Art. 557 bis CP: Agravante específica de desórdenes."
+  },
+  {
+    id: 1043,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga portar armas blancas en una manifestación violenta?",
+    opciones: ["Artículo 557 bis.1", "Artículo 563", "Artículo 550"],
+    correcta: 0,
+    explicacion: "Agravante de desórdenes por portar instrumentos peligrosos."
+  },
+  {
+    id: 1044,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la incitación a la autolesión con fines terroristas?",
+    opciones: ["Artículo 579", "Artículo 575", "No es delito"],
+    correcta: 0,
+    explicacion: "Dentro de la provocación terrorista."
+  },
+  {
+    id: 1045,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo regula la libertad condicional para condenados por terrorismo?",
+    opciones: ["Artículo 580 bis", "Artículo 92", "Artículo 36.2"],
+    correcta: 0,
+    explicacion: "Art. 580 bis CP: Remite a reglas específicas de cumplimiento."
+  },
+  {
+    id: 1046,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Es delito de atentado insultar gravemente a un agente sin contacto físico?",
+    opciones: ["No, sería desobediencia o falta de respeto (556.4)", "Sí, es atentado", "Solo si es por escrito"],
+    correcta: 0,
+    explicacion: "El atentado exige acometimiento o intimidación grave."
+  },
+  {
+    id: 1047,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la falta de respeto a la autoridad?",
+    opciones: ["Artículo 556.4", "Artículo 550", "Artículo 556.1"],
+    correcta: 0,
+    explicacion: "Art. 556.4 CP: Delito leve de falta de respeto."
+  },
+  {
+    id: 1048,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga a los que lancen objetos peligrosos en una masa de gente?",
+    opciones: ["Artículo 557", "Artículo 558", "Artículo 561"],
+    correcta: 0,
+    explicacion: "Conducta de desórdenes públicos."
+  },
+  {
+    id: 1049,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el uso de sustancias químicas para causar pánico?",
+    opciones: ["Artículo 561", "Artículo 557", "Artículo 568"],
+    correcta: 0,
+    explicacion: "Relacionado con falsa alarma o desórdenes según el caso."
+  },
+  {
+    id: 1050,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué capítulo regula la Tenencia de Armas?",
+    opciones: ["Capítulo IV", "Capítulo V", "Capítulo III"],
+    correcta: 0,
+    explicacion: "Capítulo IV."
+  },
+  {
+    id: 1051,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué capítulo regula el Terrorismo?",
+    opciones: ["Capítulo VII", "Capítulo VI", "Capítulo V"],
+    correcta: 0,
+    explicacion: "Capítulo VII (dentro del Título XXII)."
+  },
+  {
+    id: 1052,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la tenencia de municiones de guerra?",
+    opciones: ["Artículo 567", "Artículo 568", "Artículo 564"],
+    correcta: 0,
+    explicacion: "Asimilado al depósito de armas de guerra."
+  },
+  {
+    id: 1053,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el adiestramiento para fabricar explosivos caseros con fines delictivos?",
+    opciones: ["Artículo 575", "Artículo 566", "Artículo 568"],
+    correcta: 0,
+    explicacion: "Si es con fin terrorista, Art. 575."
+  },
+  {
+    id: 1054,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga el uso de drones para transportar explosivos?",
+    opciones: ["Artículos 566 o 573 (según fin)", "Artículo 563", "No está regulado"],
+    correcta: 0,
+    explicacion: "Se castiga el medio y la sustancia."
+  },
+  {
+    id: 1055,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Cuál es el sujeto pasivo del delito de atentado?",
+    opciones: ["La Autoridad o sus Agentes", "Cualquier ciudadano", "Solo los políticos"],
+    correcta: 0,
+    explicacion: "Definido en el 550 CP."
+  },
+  {
+    id: 1056,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga impedir el paso de una ambulancia mediante violencia?",
+    opciones: ["Artículo 557 (Desórdenes)", "Artículo 195", "Artículo 412"],
+    correcta: 0,
+    explicacion: "Afecta a servicios públicos esenciales."
+  },
+  {
+    id: 1057,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la ocupación de una oficina bancaria causando desórdenes?",
+    opciones: ["Artículo 557 bis", "Artículo 245", "Artículo 557"],
+    correcta: 2,
+    explicacion: "Conducta de desórdenes públicos si se altera la actividad."
+  },
+  {
+    id: 1058,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Es punible la tenencia de una pistola de fogueo modificada?",
+    opciones: ["Sí, bajo el artículo 563", "No, si no dispara", "Solo si se usa"],
+    correcta: 0,
+    explicacion: "Arma prohibida por transformación."
+  },
+  {
+    id: 1059,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la captación de menores para fines terroristas?",
+    opciones: ["Artículo 575", "Artículo 577", "Artículo 183"],
+    correcta: 0,
+    explicacion: "Art. 575.2 CP."
+  },
+  {
+    id: 1060,
+    titulo: "Título XXII - Orden Público",
+    pregunta: "¿Qué artículo castiga la malversación de fondos para financiar el terrorismo?",
+    opciones: ["Artículo 576", "Artículo 432", "Ambos"],
+    correcta: 0,
+    explicacion: "El 576 es el tipo específico de financiación."
+  },
+  {
+    id: 1061,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga al español que induzca a una potencia extranjera a declarar la guerra a España?",
+    opciones: ["Artículo 581", "Artículo 582", "Artículo 583"],
+    correcta: 0,
+    explicacion: "Art. 581 CP: Traición por inducción a la guerra."
+  },
+  {
+    id: 1062,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga al español que facilite al enemigo la entrada en España o plazas de guerra?",
+    opciones: ["Artículo 582", "Artículo 581", "Artículo 583"],
+    correcta: 0,
+    explicacion: "Art. 582 CP: Favorecimiento del enemigo."
+  },
+  {
+    id: 1063,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el espionaje (revelar secretos que puedan perjudicar la defensa nacional)?",
+    opciones: ["Artículo 584", "Artículo 585", "Artículo 583"],
+    correcta: 0,
+    explicacion: "Art. 584 CP."
+  },
+  {
+    id: 1064,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la rebelión (alzamiento público y violento para derogar la Constitución o declarar la independencia)?",
+    opciones: ["Artículo 472", "Artículo 581", "Artículo 473"],
+    correcta: 0,
+    explicacion: "Nota: La Rebelión se ubica en el Título XXI, pero por su naturaleza de traición se repasa aquí. El Título XXIII empieza estrictamente en el 581."
+  },
+  {
+    id: 1065,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga al que realice actos para privar al Rey de su libertad personal?",
+    opciones: ["Artículo 487", "Artículo 581", "Artículo 485"],
+    correcta: 0,
+    explicacion: "Delitos contra la Corona (vistos en Título XXI)."
+  },
+  {
+    id: 1066,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el genocidio?",
+    opciones: ["Artículo 607", "Artículo 608", "Artículo 610"],
+    correcta: 0,
+    explicacion: "Art. 607 CP: Delitos contra la Comunidad Internacional."
+  },
+  {
+    id: 1067,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga los delitos de lesa humanidad?",
+    opciones: ["Artículo 607 bis", "Artículo 607", "Artículo 608"],
+    correcta: 0,
+    explicacion: "Art. 607 bis CP: Ataque generalizado o sistemático contra población civil."
+  },
+  {
+    id: 1068,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la piratería?",
+    opciones: ["Artículo 616 ter", "Artículo 616 bis", "Artículo 615"],
+    correcta: 0,
+    explicacion: "Art. 616 ter CP: Atacar buques o aeronaves con violencia o engaño."
+  },
+  {
+    id: 1069,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la violación de tregua o armisticio?",
+    opciones: ["Artículo 604", "Artículo 605", "Artículo 606"],
+    correcta: 0,
+    explicacion: "Art. 604 CP."
+  },
+  {
+    id: 1070,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga los delitos contra personas protegidas en caso de conflicto armado?",
+    opciones: ["Artículo 608", "Artículo 611", "Artículo 612"],
+    correcta: 1,
+    explicacion: "Art. 611 CP: Infracciones graves contra el Derecho de Gentes."
+  },
+  {
+    id: 1071,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el uso de métodos prohibidos en la guerra (venenos, armas biológicas)?",
+    opciones: ["Artículo 610", "Artículo 609", "Artículo 611"],
+    correcta: 0,
+    explicacion: "Art. 610 CP."
+  },
+  {
+    id: 1072,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el reclutamiento de niños soldados?",
+    opciones: ["Artículo 611.4º", "Artículo 610", "Artículo 608"],
+    correcta: 0,
+    explicacion: "Art. 611 CP."
+  },
+  {
+    id: 1073,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿En qué artículo se castiga la propaganda delictiva que incite al genocidio?",
+    opciones: ["Artículo 607.2", "Artículo 607.1", "Artículo 510"],
+    correcta: 0,
+    explicacion: "Art. 607.2 CP."
+  },
+  {
+    id: 1074,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la destrucción del patrimonio histórico en caso de conflicto armado?",
+    opciones: ["Artículo 613", "Artículo 611", "Artículo 321"],
+    correcta: 0,
+    explicacion: "Art. 613 CP."
+  },
+  {
+    id: 1075,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga a los mercenarios (reclutamiento para conflictos ajenos)?",
+    opciones: ["Artículo 591", "Artículo 616 bis", "No existe"],
+    correcta: 1,
+    explicacion: "Art. 616 bis CP."
+  },
+  {
+    id: 1076,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el maltrato a prisioneros de guerra?",
+    opciones: ["Artículo 611", "Artículo 612", "Artículo 609"],
+    correcta: 1,
+    explicacion: "Art. 612 CP."
+  },
+  {
+    id: 1077,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Es imprescriptible el delito de genocidio?",
+    opciones: ["Sí, según el artículo 131.3", "No, prescribe a los 30 años", "Solo si hay más de 10 víctimas"],
+    correcta: 0,
+    explicacion: "Art. 131.3 CP: Genocidio, lesa humanidad y terrorismo con muerte no prescriben."
+  },
+  {
+    id: 1078,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el descubrimiento y revelación de secretos políticos o militares?",
+    opciones: ["Artículo 598", "Artículo 599", "Artículo 600"],
+    correcta: 0,
+    explicacion: "Art. 598 CP."
+  },
+  {
+    id: 1079,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga levantar tropas en España para servicio de potencia extranjera?",
+    opciones: ["Artículo 591", "Artículo 589", "Artículo 590"],
+    correcta: 0,
+    explicacion: "Art. 591 CP."
+  },
+  {
+    id: 1080,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la infracción de deberes de neutralidad?",
+    opciones: ["Artículo 595", "Artículo 594", "Artículo 596"],
+    correcta: 0,
+    explicacion: "Art. 595 CP."
+  },
+  {
+    id: 1081,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga al funcionario que revele secretos de la defensa nacional por imprudencia?",
+    opciones: ["Artículo 601", "Artículo 598", "Artículo 602"],
+    correcta: 0,
+    explicacion: "Art. 601 CP."
+  },
+  {
+    id: 1082,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el allanamiento de embajadas extranjeras?",
+    opciones: ["Artículo 606", "Artículo 605", "Artículo 202"],
+    correcta: 0,
+    explicacion: "Art. 606 CP."
+  },
+  {
+    id: 1083,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el atentado contra un Jefe de Estado extranjero que se halle en España?",
+    opciones: ["Artículo 605", "Artículo 606", "Artículo 581"],
+    correcta: 0,
+    explicacion: "Art. 605 CP."
+  },
+  {
+    id: 1084,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la conspiración para el genocidio?",
+    opciones: ["Artículo 615", "Artículo 607", "Artículo 17"],
+    correcta: 0,
+    explicacion: "Art. 615 CP: Castiga la provocación, conspiración y proposición para estos delitos."
+  },
+  {
+    id: 1085,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la denegación de auxilio a la población civil en conflicto armado?",
+    opciones: ["Artículo 611.5º", "Artículo 612", "Artículo 412"],
+    correcta: 0,
+    explicacion: "Art. 611 CP."
+  },
+  {
+    id: 1086,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿En qué capítulo está la 'Traición'?",
+    opciones: ["Capítulo I", "Capítulo II", "Capítulo III"],
+    correcta: 0,
+    explicacion: "Capítulo I del Título XXIII."
+  },
+  {
+    id: 1087,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿En qué capítulo están los delitos contra la Comunidad Internacional?",
+    opciones: ["Capítulo IV", "Capítulo III", "Capítulo II"],
+    correcta: 0,
+    explicacion: "Capítulo IV del Título XXIII."
+  },
+  {
+    id: 1088,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el uso de banderas o emblemas protegidos (Cruz Roja) para engañar al enemigo?",
+    opciones: ["Artículo 612.1º", "Artículo 611", "Artículo 637"],
+    correcta: 0,
+    explicacion: "Art. 612 CP (Pérfida)."
+  },
+  {
+    id: 1089,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el ataque a bienes culturales protegidos por la UNESCO en guerra?",
+    opciones: ["Artículo 613", "Artículo 614", "Artículo 323"],
+    correcta: 0,
+    explicacion: "Art. 613 CP."
+  },
+  {
+    id: 1090,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga las represalias contra prisioneros?",
+    opciones: ["Artículo 614 bis", "Artículo 612", "Artículo 611"],
+    correcta: 0,
+    explicacion: "Art. 614 bis CP."
+  },
+  {
+    id: 1091,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la incitación directa al genocidio?",
+    opciones: ["Artículo 615", "Artículo 607", "Artículo 510"],
+    correcta: 0,
+    explicacion: "Art. 615 CP."
+  },
+  {
+    id: 1092,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la toma de rehenes en conflicto armado?",
+    opciones: ["Artículo 611.2º", "Artículo 163", "Artículo 612"],
+    correcta: 0,
+    explicacion: "Art. 611 CP."
+  },
+  {
+    id: 1093,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el saqueo de ciudades tomadas?",
+    opciones: ["Artículo 612.3º", "Artículo 613", "Artículo 234"],
+    correcta: 0,
+    explicacion: "Art. 612 CP."
+  },
+  {
+    id: 1094,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga los delitos contra la seguridad de la navegación marítima?",
+    opciones: ["Artículo 616 ter", "Artículo 616 bis", "Artículo 560"],
+    correcta: 0,
+    explicacion: "Art. 616 ter CP (Piratería y seguridad)."
+  },
+  {
+    id: 1095,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Cuál es el último artículo de este Título?",
+    opciones: ["Artículo 616 quater", "Artículo 616 ter", "Artículo 617"],
+    correcta: 0,
+    explicacion: "Art. 616 quater CP."
+  },
+  {
+    id: 1096,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿A qué se refiere el artículo 616 quater?",
+    opciones: ["Medidas de comiso y responsabilidad jurídica", "Pena de muerte", "Derecho a asilo"],
+    correcta: 0,
+    explicacion: "Disposiciones comunes sobre responsabilidad de personas jurídicas."
+  },
+  {
+    id: 1097,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga el apartheid?",
+    opciones: ["Artículo 607 bis.2.9º", "Artículo 607", "Artículo 510"],
+    correcta: 0,
+    explicacion: "Como modalidad de lesa humanidad."
+  },
+  {
+    id: 1098,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la desaparición forzada de personas?",
+    opciones: ["Artículo 607 bis.2.6º", "Artículo 166", "Artículo 530"],
+    correcta: 0,
+    explicacion: "En el contexto de lesa humanidad."
+  },
+  {
+    id: 1099,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿En qué artículo se castiga el aborto forzado en conflicto armado?",
+    opciones: ["Artículo 611.1º", "Artículo 144", "Artículo 608"],
+    correcta: 0,
+    explicacion: "Art. 611 CP."
+  },
+  {
+    id: 1100,
+    titulo: "Título XXIII - Delitos de traición",
+    pregunta: "¿Qué artículo castiga la tortura como crimen de lesa humanidad?",
+    opciones: ["Artículo 607 bis.2.5º", "Artículo 174", "Artículo 611"],
+    correcta: 0,
+    explicacion: "Art. 607 bis CP."
+  },
+
+  // --- LIBRO III: DELITOS LEVES (Disposiciones residuales tras derogación de faltas) ---
+  {
+    id: 1101,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga el maltrato animal que no cause lesiones?",
+    opciones: ["Artículo 340 bis", "Artículo 631 (Derogado)", "Artículo 337"],
+    correcta: 0,
+    explicacion: "Nota: La mayoría del Libro III fue derogado en 2015. Las conductas pasaron al Libro II como delitos leves."
+  },
+  {
+    id: 1102,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga la falta de respeto a la autoridad?",
+    opciones: ["Artículo 556.4", "Artículo 634 (Derogado)", "Artículo 550"],
+    correcta: 0,
+    explicacion: "Antigua falta del Libro III, ahora delito leve en el 556.4."
+  },
+  {
+    id: 1103,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga el hurto de cuantía inferior a 400€?",
+    opciones: ["Artículo 234.2", "Artículo 623 (Derogado)", "Artículo 234.1"],
+    correcta: 0,
+    explicacion: "Ahora es delito leve de hurto."
+  },
+  {
+    id: 1104,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga las lesiones que no requieren tratamiento médico?",
+    opciones: ["Artículo 147.2", "Artículo 617 (Derogado)", "Artículo 147.1"],
+    correcta: 0,
+    explicacion: "Delito leve de lesiones."
+  },
+  {
+    id: 1105,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga el maltrato de obra sin lesión?",
+    opciones: ["Artículo 147.3", "Artículo 617.2 (Derogado)", "Artículo 153"],
+    correcta: 0,
+    explicacion: "Delito leve de maltrato."
+  },
+  {
+    id: 1106,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga las amenazas leves?",
+    opciones: ["Artículo 171.7", "Artículo 620 (Derogado)", "Artículo 169"],
+    correcta: 0,
+    explicacion: "Delito leve de amenazas."
+  },
+  {
+    id: 1107,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga las coacciones leves?",
+    opciones: ["Artículo 172.3", "Artículo 620.2 (Derogado)", "Artículo 172.1"],
+    correcta: 0,
+    explicacion: "Delito leve de coacciones."
+  },
+  {
+    id: 1108,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga las injurias leves (solo en ámbito doméstico)?",
+    opciones: ["Artículo 173.4", "Artículo 208", "Artículo 620 (Derogado)"],
+    correcta: 0,
+    explicacion: "Las injurias leves fuera del ámbito familiar fueron despenalizadas."
+  },
+  {
+    id: 1109,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga los daños por cuantía inferior a 400€?",
+    opciones: ["Artículo 263.1 (párrafo 2)", "Artículo 625 (Derogado)", "Artículo 263.2"],
+    correcta: 0,
+    explicacion: "Delito leve de daños."
+  },
+  {
+    id: 1110,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga el uso de moneda falsa de cuantía inferior a 400€?",
+    opciones: ["Artículo 386", "Artículo 627 (Derogado)", "Artículo 400"],
+    correcta: 0,
+    explicacion: "Integrado en el Libro II."
+  },
+  {
+    id: 1111,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga la ocupación de inmuebles sin violencia?",
+    opciones: ["Artículo 245.2", "Artículo 637", "Artículo 202"],
+    correcta: 0,
+    explicacion: "Delito leve de usurpación."
+  },
+  {
+    id: 1112,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga el uso público e indebido de uniforme de agente de la autoridad?",
+    opciones: ["Artículo 402 bis", "Artículo 637 (Derogado)", "Artículo 403"],
+    correcta: 0,
+    explicacion: "Art. 402 bis CP."
+  },
+  {
+    id: 1113,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga la estafa inferior a 400€?",
+    opciones: ["Artículo 248.2", "Artículo 249 (último párrafo)", "Artículo 623 (Derogado)"],
+    correcta: 1,
+    explicacion: "Art. 249 CP tras reforma 2022."
+  },
+  {
+    id: 1114,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga el abandono de animales?",
+    opciones: ["Artículo 340 bis", "Artículo 631 (Derogado)", "Artículo 337"],
+    correcta: 0,
+    explicacion: "Integrado en el nuevo capítulo de maltrato animal."
+  },
+  {
+    id: 1115,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿En qué año se eliminaron formalmente las 'Faltas'?",
+    opciones: ["2015", "2010", "2022"],
+    correcta: 0,
+    explicacion: "Mediante la LO 1/2015."
+  },
+  {
+    id: 1116,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Cuál es el plazo de prescripción de los delitos leves?",
+    opciones: ["1 año", "6 meses", "5 años"],
+    correcta: 0,
+    explicacion: "Art. 131.1 CP."
+  },
+  {
+    id: 1117,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Generan antecedentes penales los delitos leves?",
+    opciones: ["Sí", "No", "Solo si hay reincidencia"],
+    correcta: 0,
+    explicacion: "A diferencia de las antiguas faltas, los delitos leves dejan antecedentes."
+  },
+  {
+    id: 1118,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Es necesaria la denuncia de la persona agraviada para perseguir amenazas leves?",
+    opciones: ["Sí", "No, es de oficio", "Solo si es un niño"],
+    correcta: 0,
+    explicacion: "Art. 171.7 CP: Requiere denuncia salvo en violencia de género."
+  },
+  {
+    id: 1119,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Qué artículo castiga la apropiación indebida de menos de 400€?",
+    opciones: ["Artículo 253.2", "Artículo 254", "Artículo 252"],
+    correcta: 0,
+    explicacion: "Delito leve de apropiación."
+  },
+  {
+    id: 1120,
+    titulo: "Libro III - Delitos Leves",
+    pregunta: "¿Cómo se llama el último artículo del Código Penal?",
+    opciones: ["Artículo 616 quater (Libro II)", "Artículo 639 (Derogado)", "Disposición Final"],
+    correcta: 0,
+    explicacion: "Tras la derogación del Libro III, el código termina operativamente en el 616 quater del Libro II."
   }
 ];
