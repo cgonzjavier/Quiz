@@ -8,7 +8,7 @@ export const preguntasLey = [
       "Art. 139.1",
       "Art. 142.1"
     ],
-    "correcta": 1
+    "correcta": 0
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@ export const preguntasLey = [
       "Art. 139.2",
       "Art. 140.1"
     ],
-    "correcta": 1
+    "correcta": 0
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@ export const preguntasLey = [
       "Art. 139.2",
       "Art. 140.1.1ª"
     ],
-    "correcta": 1
+    "correcta": 0
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@ export const preguntasLey = [
       "Art. 140.1.1ª",
       "Art. 140.2"
     ],
-    "correcta": 2
+    "correcta": 1
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@ export const preguntasLey = [
       "Art. 140.2",
       "Art. 139.2"
     ],
-    "correcta": 2
+    "correcta": 1
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@ export const preguntasLey = [
       "Art. 138.2",
       "Art. 143.1"
     ],
-    "correcta": 1
+    "correcta": 0
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@ export const preguntasLey = [
       "Art. 142.2",
       "Art. 142 bis"
     ],
-    "correcta": 1
+    "correcta": 0
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@ export const preguntasLey = [
       "Art. 142 bis",
       "Art. 140.2"
     ],
-    "correcta": 2
+    "correcta": 1
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@ export const preguntasLey = [
       "Art. 143.3",
       "Art. 143.4"
     ],
-    "correcta": 2
+    "correcta": 1
   },
   {
     "id": 10,
@@ -107,7 +107,7 @@ export const preguntasLey = [
       "Art. 143.5",
       "Art. 140 bis.1"
     ],
-    "correcta": 2
+    "correcta": 1
   },
   {
     "id": 11,
@@ -118,7 +118,7 @@ export const preguntasLey = [
       "Matar con ensañamiento",
       "Matar por precio"
     ],
-    "correcta": 2
+    "correcta": 1
   },
   {
     "id": 12,
@@ -129,7 +129,7 @@ export const preguntasLey = [
       "Asesinato subsiguiente a delito contra la libertad sexual cometido sobre la víctima",
       "Pertenencia a grupo criminal"
     ],
-    "correcta": 2
+    "correcta": 1
   },
   {
     "id": 13,
@@ -151,6 +151,6 @@ export const preguntasLey = [
       "Homicidio por imprudencia menos grave",
       "Homicidio profesional imprudente"
     ],
-    "correcta": 2
+    "correcta": 1
   }
 ];

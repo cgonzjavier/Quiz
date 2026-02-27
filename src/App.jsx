@@ -113,7 +113,7 @@ function App() {
             <span className="text-gray-400">Pregunta {preguntaActual + 1} / {preguntasSeleccionadas.length}</span>
           </div>
 
-          <h2 className="text-xl font-semibold mb-8 text-gray-800 leading-snug">{p.pregunta}</h2>
+          <h2 className="text-xl font-semibold mb-8 text-gray-800 leading-snug">{p.preguntas}</h2>
 
           <div className="space-y-3">
             {p.opciones.map((op, i) => (
@@ -139,9 +139,6 @@ function App() {
 
           {respondido && (
             <div className="mt-8">
-              <div className="p-4 bg-slate-50 rounded-xl text-sm text-slate-600 border border-slate-100">
-                <strong>Explicación:</strong> {p.explicacion}
-              </div>
               <button 
                 onClick={() => {
                   if (preguntaActual + 1 < preguntasSeleccionadas.length) {
