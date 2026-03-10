@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { preguntasLey } from '../data/preguntas';
+import styles from '../styles/testview.module.css';
 
 export default function TestView({ config, onFinish }) {
   const [index, setIndex] = useState(0);
@@ -8,7 +9,6 @@ export default function TestView({ config, onFinish }) {
   const [test, setTest] = useState([]);
 
   useEffect(() => {
-    // Definimos la lógica dentro del efecto para evitar errores de compilación
     const prepararTest = () => {
       const list = config.filtroTitulo === 'Todos' 
         ? [...preguntasLey] 
@@ -20,53 +20,68 @@ export default function TestView({ config, onFinish }) {
       
       setTest(aleatorias);
     };
-
     prepararTest();
-  }, [config.filtroTitulo, config.numPreguntas]); // Dependencias explícitas
+  }, [config.filtroTitulo, config.numPreguntas]);
 
-  // Función usada en el JSX
   const handleAnswer = (i) => {
     if (selected !== null) return;
     setSelected(i);
     if (i === test[index].correcta) setScore(s => s + 1);
   };
 
-  if (test.length === 0) return <div>Cargando preguntas...</div>;
+  if (test.length === 0) return <div className={styles.testContainer}>Cargando...</div>;
 
   const p = test[index];
+  const progreso = ((index + 1) / test.length) * 100;
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4 flex justify-center">
-      <div className="bg-white p-6 rounded-2xl shadow-xl w-full max-w-2xl">
-        <h2 className="text-xl font-bold mb-4">{p.pregunta}</h2>
-        {p.opciones.map((op, i) => (
-          <button 
-            key={i} 
-            onClick={() => handleAnswer(i)} // Aquí es donde se "lee" la función
-            className={`w-full p-4 mb-2 border rounded-xl transition-all ${
-              selected === i 
-                ? (i === p.correcta ? "bg-green-100 border-green-500" : "bg-red-100 border-red-500") 
-                : "hover:bg-gray-50"
-            }`}
-          >
-            {op}
-          </button>
-        ))}
+    <div className={styles.testContainer}>
+      <div className={styles.questionCard}>
+        {/* Pregunta */}
+        <h2 className={styles.questionText}>{p.pregunta}</h2>
+        
+        <div className={styles.optionsContainer}>
+          {p.opciones.map((op, i) => (
+            <button 
+              key={i} 
+              onClick={() => handleAnswer(i)}
+              className={`${styles.optionButton} ${
+                selected !== null 
+                  ? (i === p.correcta ? styles.correct : (selected === i ? styles.incorrect : ""))
+                  : ""
+              }`}
+            >
+              {op}
+            </button>
+          ))}
+        </div>
+
+        {/* Botón Siguiente / Resultados */}
         {selected !== null && (
           <button 
+            className={styles.nextButton}
             onClick={() => {
               if (index + 1 < test.length) {
                 setIndex(index + 1);
                 setSelected(null);
               } else {
-                onFinish({ score: selected === p.correcta ? score : score, total: test.length });
+                onFinish({ score: selected === p.correcta ? score + 1 : score, total: test.length });
               }
             }} 
-            className="mt-4 w-full bg-black text-white py-3 rounded-xl"
           >
             {index + 1 === test.length ? "Ver Resultados" : "Siguiente"}
           </button>
         )}
+
+        {/* Barra de progreso */}
+        <div className={styles.progressContainer}>
+          <p style={{ color: '#94A3B8', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
+            Pregunta {index + 1} de {test.length}
+          </p>
+          <div className={styles.progressBar}>
+            <div className={styles.progressFill} style={{ width: `${progreso}%` }} />
+          </div>
+        </div>
       </div>
     </div>
   );

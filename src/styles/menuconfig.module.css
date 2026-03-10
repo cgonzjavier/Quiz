@@ -1,0 +1,66 @@
+.configContainer {
+  min-height: 100vh;
+  background-color: #0D1B2A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.configCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 24px;
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  width: 100%;
+  max-width: 450px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  color: #C5A059;
+  font-size: 0.95rem;
+}
+
+.select {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.range {
+  width: 100%;
+  accent-color: #C5A059; /* Colorea el slider de dorado */
+  cursor: pointer;
+}
+
+.startButton {
+  width: 100%;
+  padding: 1.25rem;
+  background: #C5A059;
+  color: #0D1B2A;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.startButton:hover {
+  background: #A6864B;
+  transform: translateY(-2px);
+}

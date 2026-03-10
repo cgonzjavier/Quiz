@@ -1,0 +1,60 @@
+.resultsContainer {
+  min-height: 100vh;
+  background-color: #0D1B2A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.resultsCard {
+  background: rgba(255, 255, 255, 0.03); /* Cristalino sutil */
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 24px;
+  border: 1px solid rgba(197, 160, 89, 0.3); /* Dorado translúcido */
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.scoreTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #F8FAFC;
+}
+
+.scorePercentage {
+  font-size: 5rem; /* Más grande para impacto */
+  font-weight: 800;
+  color: #C5A059;
+  margin: 1rem 0;
+  line-height: 1;
+}
+
+.statsText {
+  color: #94A3B8;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.restartButton {
+  width: 100%;
+  padding: 1.25rem;
+  background: #C5A059;
+  color: #0D1B2A;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.restartButton:hover {
+  background: #A6864B;
+  transform: translateY(-2px);
+}

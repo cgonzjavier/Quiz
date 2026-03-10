@@ -1,10 +1,24 @@
+import styles from '../styles/results.module.css';
+
 export default function Results({ score, onRestart }) {
+  const porcentaje = Math.round((score.score / score.total) * 100);
+
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 text-center">
-      <div className="bg-white p-10 rounded-3xl shadow-2xl w-full max-w-sm">
-        <h2 className="text-2xl font-bold mb-2">¡Completado!</h2>
-        <p className="text-4xl font-black text-blue-600 mb-6">{Math.round((score.score / score.total) * 100)}%</p>
-        <button onClick={onRestart} className="w-full bg-blue-600 text-white py-3 rounded-xl">Volver al menú</button>
+    <div className={styles.resultsContainer}>
+      <div className={styles.resultsCard}>
+        <h2 className={styles.scoreTitle}>Resultado del Test</h2>
+        
+        <div className={styles.scorePercentage}>
+          {porcentaje}%
+        </div>
+        
+        <p className={styles.statsText}>
+          Has acertado {score.score} de {score.total} preguntas.
+        </p>
+
+        <button onClick={onRestart} className={styles.restartButton}>
+          Volver al menú
+        </button>
       </div>
     </div>
   );
