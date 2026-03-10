@@ -7,7 +7,7 @@ const PORT = 3001;
 
 // Middlewares
 app.use(cors({
-  origin: "https://quiz-pzolx9oh8-cgonzjaviers-projects.vercel.app/",
+  origin: "https://quiz-pzolx9oh8-cgonzjaviers-projects.vercel.app",
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
