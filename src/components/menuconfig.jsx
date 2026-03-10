@@ -6,7 +6,7 @@ export default function MenuConfig({ onStart }) {
   const [selectedId, setSelectedId] = useState('');
   const [num, setNum] = useState(10);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5173';
 
   useEffect(() => {
     const cargarTitulos = async () => {

@@ -4,7 +4,7 @@ import styles from '../styles/perfil.module.css';
 export default function Perfil() {
   const [stats, setStats] = useState({ totalTests: 0, promedio: 0 });
   const [nombre, setNombre] = useState('Estudiante');
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5173';
 
   useEffect(() => {
     // Aquí traeremos las stats de la DB

@@ -8,20 +8,18 @@ export default function TestView({ config, onFinish }) {
   const [test, setTest] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5173';
 
   useEffect(() => {
     const fetchPreguntas = async () => {
-      // Si no hay ID, no intentamos hacer la petición
       if (!config.tituloId) return;
 
       try {
         setLoading(true);
-        // Usamos ${API_URL} para que funcione en cualquier sitio
         const response = await fetch(`${API_URL}/api/preguntas/${config.tituloId}`);
         const data = await response.json();
         
-        // Mezclar aleatoriamente las preguntas recibidas de la BD
+        // Mezcla aleatoria y limitación según configuración
         const aleatorias = data
           .sort(() => 0.5 - Math.random())
           .slice(0, config.numPreguntas);
@@ -40,8 +38,27 @@ export default function TestView({ config, onFinish }) {
   const handleAnswer = (i) => {
     if (selected !== null) return;
     setSelected(i);
-    // test[index].correcta ya es un entero (0, 1, 2...)
+    // Verificamos si la respuesta seleccionada es la correcta
     if (i === test[index].correcta) setScore(s => s + 1);
+  };
+
+  const finalizarTest = async (finalScore) => {
+    try {
+      // Persistencia de datos en la base de datos
+      await fetch(`${API_URL}/api/guardar-resultado`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          titulo_id: config.tituloId,
+          puntuacion: finalScore,
+          total_preguntas: test.length
+        }),
+      });
+    } catch (err) {
+      console.error("Error guardando resultado en la BD:", err);
+    }
+    // Finalizamos la vista actual
+    onFinish({ score: finalScore, total: test.length });
   };
 
   if (loading) return <div className={styles.testContainer}>Cargando preguntas...</div>;
@@ -53,7 +70,6 @@ export default function TestView({ config, onFinish }) {
   return (
     <div className={styles.testContainer}>
       <div className={styles.questionCard}>
-        {/* Cambiado de p.pregunta a p.enunciado según BD */}
         <h2 className={styles.questionText}>{p.enunciado}</h2>
         
         <div className={styles.optionsContainer}>
@@ -80,7 +96,9 @@ export default function TestView({ config, onFinish }) {
                 setIndex(index + 1);
                 setSelected(null);
               } else {
-                onFinish({ score: selected === p.correcta ? score : score, total: test.length });
+                // Aseguramos el conteo final del score
+                const finalScore = selected === p.correcta ? score : score;
+                finalizarTest(finalScore);
               }
             }} 
           >

@@ -53,6 +53,23 @@ app.get('/api/preguntas/:tituloId', async (req, res) => {
   }
 });
 
+// En tu servidor (ej. index.js o server.js)
+app.post('/api/guardar-resultado', async (req, res) => {
+  const { titulo_id, puntuacion, total_preguntas } = req.body;
+  
+  try {
+    // Si usas el driver de pg (PostgreSQL)
+    await pool.query(
+      'INSERT INTO historial_test (titulo_id, puntuacion, total_preguntas) VALUES ($1, $2, $3)',
+      [titulo_id, puntuacion, total_preguntas]
+    );
+    res.status(200).send({ message: 'Guardado con éxito' });
+  } catch (err) {
+    console.error("Error al guardar progreso:", err);
+    res.status(500).send({ error: 'Error al insertar en la base de datos' });
+  }
+});
+
 // Ruta de Login real contra PostgreSQL
 app.post('/api/login', async (req, res) => {
   const { usuario, clave } = req.body;
