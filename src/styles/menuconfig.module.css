@@ -45,7 +45,7 @@
   box-shadow: 0 0 15px rgba(197, 160, 89, 0.2);
 }
 
-.sliderContainer { display: flex; flex-direction: column; gap: 0.5rem; }
+.label { color: #C5A059; font-weight: 600; margin: 0; }
 
 .range {
   width: 100%;

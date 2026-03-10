@@ -15,7 +15,7 @@ export default function MenuConfig({ onStart }) {
         const data = await respuesta.json();
         setTitulos(data);
         if (data.length > 0) setSelectedId(data[0].id);
-      } catch (err) { console.error("Error:", err); }
+      } catch (err) { console.error("Error cargando títulos:", err); }
     };
     cargarTitulos();
   }, [API_URL]);
@@ -25,7 +25,7 @@ export default function MenuConfig({ onStart }) {
       <div className={styles.configCard}>
         <h2 className={styles.title}>Configuración del Test</h2>
         
-        <p className={styles.label}>Selecciona el título a evaluar:</p>
+        <p className={styles.label}>Selecciona el tema a evaluar:</p>
         <div className={styles.grid}>
           {titulos.map(t => (
             <div 
@@ -51,7 +51,7 @@ export default function MenuConfig({ onStart }) {
           className={styles.startButton} 
           onClick={() => onStart({ tituloId: selectedId, numPreguntas: num })}
         >
-          Iniciar Test
+          Iniciar Sesión de Estudio
         </button>
       </div>
     </div>
