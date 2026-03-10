@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #0f172a; /* Azul oscuro de tu logo */
+  --color-accent: #c5a059;  /* Dorado/Crema de tu logo */
+  --color-bg: #f8fafc;      /* Fondo claro */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--color-bg);
+  margin: 0;
+}

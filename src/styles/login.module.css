@@ -1,0 +1,58 @@
+.loginContainer {
+  min-height: 100vh;
+  background-color: #0D1B2A; /* Azul profundo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginCard {
+  background: rgba(255, 255, 255, 0.05); /* Cristalino */
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #C5A059; /* Dorado */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto; 
+  background-color: transparent;
+}
+
+.title {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.slogan {
+  color: #C5A059;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #334155;
+  color: white;
+  border-radius: 6px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.8rem;
+  background: #C5A059;
+  color: #0D1B2A;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
