@@ -24,7 +24,7 @@ app.use((req, _, next) => {
 });
 
 // Ruta para obtener los titulos disponibles
-app.get('/api/titulos', async (req, res) => {
+app.get('/api/titulos', async (_, res) => {
   try {
     const result = await pool.query('SELECT * FROM titulos ORDER BY id ASC');
     res.json(result.rows);
