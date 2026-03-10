@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from './styles/Global.css';
 import Login from './components/login';
 import Home from './components/home';
 import MenuConfig from './components/menuconfig';
@@ -14,7 +15,7 @@ function App() {
   const [testData, setTestData] = useState({ score: 0, total: 0 });
 
   return (
-    <div className="app-container">
+    <div className={styles.appContainer}>
       {fase === 'login' && <Login onLogin={() => setFase('home')} />}
       
       {fase === 'home' && (

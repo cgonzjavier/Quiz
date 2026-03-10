@@ -9,3 +9,13 @@ body {
   background-color: var(--color-bg);
   margin: 0;
 }
+
+.appCcontainer {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  padding: 20px;
+}
