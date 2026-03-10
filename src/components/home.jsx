@@ -2,9 +2,9 @@ import styles from '../styles/home.module.css';
 
 export default function Home({ onSelectMode }) {
   const modos = [
-    { id: 'titulos', label: 'Por Temas', icon: '📚' },
+    { id: 'titulos', label: 'Por Titulos', icon: '📚' },
     { id: 'aleatorio', label: 'Aleatorio', icon: '🎲' },
-    { id: 'examen', label: 'Examen (Cronómetro)', icon: '⏱️' },
+    { id: 'examen', label: 'Simulacro de examen', icon: '⏱️' },
     { id: 'perfil', label: 'Mi Perfil', icon: '👤' }
   ];
 
