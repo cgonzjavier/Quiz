@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #0f172a; /* Azul oscuro de tu logo */
-  --color-accent: #c5a059;  /* Dorado/Crema de tu logo */
-  --color-bg: #f8fafc;      /* Fondo claro */
+  --color-primary: #0f172a;
+  --color-accent: #c5a059;
+  --color-bg:#0D1B2A;
 }
 
 body {
