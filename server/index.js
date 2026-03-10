@@ -7,8 +7,11 @@ const PORT = 3001;
 
 // Middlewares
 app.use(cors({
-  origin: 'https://iustest.netlify.app' // Permite peticiones desde el dominio
+  origin: 'https://iustest.netlify.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
 }));
+
 app.use(express.json());
 
 // Log de peticiones para depuración
