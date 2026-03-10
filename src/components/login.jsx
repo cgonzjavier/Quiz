@@ -7,11 +7,15 @@ export default function Login({ onLogin }) {
   const [pass, setPass] = useState('');
   const [error, setError] = useState(false);
 
+  // Esta variable detecta automáticamente si estás en la nube (Render) o en local
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     
     try {
-      const respuesta = await fetch('http://localhost:3001/api/login', {
+      // Usamos ${API_URL} para que siempre busque el servidor en el sitio correcto
+      const respuesta = await fetch(`${API_URL}/api/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ usuario: user, clave: pass })

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { preguntasLey } from '../data/preguntas';
 import styles from '../styles/testview.module.css';
 
 export default function TestView({ config, onFinish }) {
@@ -7,29 +6,46 @@ export default function TestView({ config, onFinish }) {
   const [score, setScore] = useState(0);
   const [selected, setSelected] = useState(null);
   const [test, setTest] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
   useEffect(() => {
-    const prepararTest = () => {
-      const list = config.filtroTitulo === 'Todos' 
-        ? [...preguntasLey] 
-        : preguntasLey.filter(p => p.titulo === config.filtroTitulo);
-      
-      const aleatorias = list
-        .sort(() => 0.5 - Math.random())
-        .slice(0, config.numPreguntas);
-      
-      setTest(aleatorias);
+    const fetchPreguntas = async () => {
+      // Si no hay ID, no intentamos hacer la petición
+      if (!config.tituloId) return;
+
+      try {
+        setLoading(true);
+        // Usamos ${API_URL} para que funcione en cualquier sitio
+        const response = await fetch(`${API_URL}/api/preguntas/${config.tituloId}`);
+        const data = await response.json();
+        
+        // Mezclar aleatoriamente las preguntas recibidas de la BD
+        const aleatorias = data
+          .sort(() => 0.5 - Math.random())
+          .slice(0, config.numPreguntas);
+        
+        setTest(aleatorias);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error al cargar el test:", error);
+        setLoading(false);
+      }
     };
-    prepararTest();
-  }, [config.filtroTitulo, config.numPreguntas]);
+
+    fetchPreguntas();
+  }, [config.tituloId, config.numPreguntas, API_URL]);
 
   const handleAnswer = (i) => {
     if (selected !== null) return;
     setSelected(i);
+    // test[index].correcta ya es un entero (0, 1, 2...)
     if (i === test[index].correcta) setScore(s => s + 1);
   };
 
-  if (test.length === 0) return <div className={styles.testContainer}>Cargando...</div>;
+  if (loading) return <div className={styles.testContainer}>Cargando preguntas...</div>;
+  if (test.length === 0) return <div className={styles.testContainer}>No hay preguntas disponibles.</div>;
 
   const p = test[index];
   const progreso = ((index + 1) / test.length) * 100;
@@ -37,8 +53,8 @@ export default function TestView({ config, onFinish }) {
   return (
     <div className={styles.testContainer}>
       <div className={styles.questionCard}>
-        {/* Pregunta */}
-        <h2 className={styles.questionText}>{p.pregunta}</h2>
+        {/* Cambiado de p.pregunta a p.enunciado según BD */}
+        <h2 className={styles.questionText}>{p.enunciado}</h2>
         
         <div className={styles.optionsContainer}>
           {p.opciones.map((op, i) => (
@@ -56,7 +72,6 @@ export default function TestView({ config, onFinish }) {
           ))}
         </div>
 
-        {/* Botón Siguiente / Resultados */}
         {selected !== null && (
           <button 
             className={styles.nextButton}
@@ -65,7 +80,7 @@ export default function TestView({ config, onFinish }) {
                 setIndex(index + 1);
                 setSelected(null);
               } else {
-                onFinish({ score: selected === p.correcta ? score + 1 : score, total: test.length });
+                onFinish({ score: selected === p.correcta ? score : score, total: test.length });
               }
             }} 
           >
@@ -73,7 +88,6 @@ export default function TestView({ config, onFinish }) {
           </button>
         )}
 
-        {/* Barra de progreso */}
         <div className={styles.progressContainer}>
           <p style={{ color: '#94A3B8', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
             Pregunta {index + 1} de {test.length}
