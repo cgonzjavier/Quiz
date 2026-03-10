@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { usuariosAutorizados } from '../data/usuarios';
 import styles from '../styles/login.module.css';
 import logo from '../img/logo.png'; 
 
@@ -8,19 +7,27 @@ export default function Login({ onLogin }) {
   const [pass, setPass] = useState('');
   const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Verificamos si existe un usuario que coincida
-    const esValido = usuariosAutorizados.find(
-      (u) => u.usuario === user && u.clave === pass
-    );
+    try {
+      const respuesta = await fetch('http://localhost:3001/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ usuario: user, clave: pass })
+      });
 
-    if (esValido) {
-      setError(false);
-      onLogin(); // Llama a la función que cambia el estado padre (ej. App.jsx)
-    } else {
-      setError(true);
+      const data = await respuesta.json();
+
+      if (data.success) {
+        setError(false);
+        onLogin(); // Entras a la app
+      } else {
+        setError(true);
+      }
+    } catch (err) {
+        console.error("Error conectando con el servidor:", err);
+        alert("El servidor no responde");
     }
   };
 
