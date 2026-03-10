@@ -1,0 +1,42 @@
+.homeContainer {
+  min-height: 100vh;
+  background-color: #0D1B2A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+}
+
+.header { text-align: center; margin-bottom: 3rem; }
+.header h1 { color: #C5A059; font-size: 2.5rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card:hover {
+  background: rgba(197, 160, 89, 0.1);
+  transform: translateY(-5px);
+  border-color: #C5A059;
+}
+
+.icon { font-size: 2.5rem; }
+.card h3 { color: #F8FAFC; margin: 0; }
