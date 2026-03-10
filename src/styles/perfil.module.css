@@ -1,0 +1,55 @@
+.perfilContainer { 
+  padding: 2rem; 
+  max-width: 500px; 
+  margin: 2rem auto; 
+  color: white; 
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 24px;
+  border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.title { color: #C5A059; text-align: center; margin-bottom: 2rem; }
+
+.statsGrid { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 1rem; 
+  margin-bottom: 2rem; 
+}
+
+.statCard { 
+  background: rgba(255, 255, 255, 0.05); 
+  padding: 1.5rem; 
+  border-radius: 16px; 
+  text-align: center; 
+  border: 1px solid rgba(197, 160, 89, 0.1);
+}
+
+.statCard strong { font-size: 1.5rem; color: #C5A059; display: block; }
+
+.settings h3 { color: #F8FAFC; margin-bottom: 1rem; }
+
+.input { 
+  width: 100%; 
+  padding: 1rem; 
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  color: white; 
+  border-radius: 12px; 
+  margin-bottom: 1rem;
+  box-sizing: border-box; /* Importante para que el padding no rompa el ancho */
+}
+
+.saveButton { 
+  width: 100%; 
+  padding: 1rem; 
+  background: #C5A059; 
+  color: #0D1B2A;
+  border: none; 
+  border-radius: 12px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: opacity 0.3s;
+}
+
+.saveButton:hover { opacity: 0.9; }
