@@ -7,7 +7,6 @@ const PORT = 3001;
 
 // Middlewares
 app.use(cors({
-  origin: 'https://iustest.netlify.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
