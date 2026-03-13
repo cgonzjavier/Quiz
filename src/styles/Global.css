@@ -1,21 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap');
+ 
 :root {
-  --color-primary: #0f172a;
-  --color-accent: #c5a059;
-  --color-bg:#0D1B2A;
+  --gold:        #C5A059;
+  --gold-light:  #D4B06A;
+  --gold-dim:    #A6864B;
+  --gold-glow:   rgba(197, 160, 89, 0.15);
+  --gold-border: rgba(197, 160, 89, 0.25);
+ 
+  --bg-base:     #080E18;
+  --bg-surface:  #0D1521;
+  --bg-elevated: #111C2E;
+  --bg-card:     #141E30;
+  --bg-input:    rgba(255,255,255,0.04);
+ 
+  --text-primary:   #F0EDE8;
+  --text-secondary: #8A95A8;
+  --text-muted:     #4A5568;
+ 
+  --success:  #10B981;
+  --error:    #EF4444;
+  --info:     #3B82F6;
+ 
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+ 
+  --shadow-card: 0 8px 32px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.04) inset;
+  --shadow-glow: 0 0 40px rgba(197,160,89,0.08);
+ 
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+ 
+*, *::before, *::after { box-sizing: border-box; }
+ 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--color-bg);
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
   margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
-
-.appCcontainer {
+ 
+/* Fondo con textura sutil */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 10%, rgba(197,160,89,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 60% at 80% 80%, rgba(59,130,246,0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+ 
+#root, .app-container {
+  position: relative;
+  z-index: 1;
   min-height: 100vh;
-  width: 100%;
-  background-color: var(--color-bg);
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra el contenido horizontalmente */
-  padding: 20px;
 }
+ 
+/* Utilidades reutilizables */
+.gold-text  { color: var(--gold); }
+.muted-text { color: var(--text-secondary); }
+ 
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--gold-glow);
+  border: 1px solid var(--gold-border);
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+ 
+/* Barra de progreso base */
+.progress-track {
+  height: 4px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-dim), var(--gold-light));
+  border-radius: 99px;
+  transition: width 0.5s ease;
+}
+ 
+/* Scrollbar global */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: var(--bg-elevated); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }

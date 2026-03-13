@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/testview.module.css';
 
+const LETTERS = ['A', 'B', 'C', 'D'];
+
 export default function TestView({ config, onFinish }) {
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -12,22 +14,25 @@ export default function TestView({ config, onFinish }) {
 
   useEffect(() => {
     const fetchPreguntas = async () => {
-      if (!config.tituloId) return;
-
       try {
         setLoading(true);
-        const response = await fetch(`${API_URL}/api/preguntas/${config.tituloId}`);
+
+        // Para modo aleatorio o examen: traer de todos los títulos
+        const endpoint = config.tituloId
+          ? `${API_URL}/api/preguntas/${config.tituloId}`
+          : `${API_URL}/api/preguntas`;
+
+        const response = await fetch(endpoint);
         const data = await response.json();
-        
-        // Mezcla aleatoria y limitación según configuración
+
         const aleatorias = data
           .sort(() => 0.5 - Math.random())
           .slice(0, config.numPreguntas);
-        
+
         setTest(aleatorias);
-        setLoading(false);
       } catch (error) {
-        console.error("Error al cargar el test:", error);
+        console.error('Error al cargar el test:', error);
+      } finally {
         setLoading(false);
       }
     };
@@ -38,83 +43,117 @@ export default function TestView({ config, onFinish }) {
   const handleAnswer = (i) => {
     if (selected !== null) return;
     setSelected(i);
-    // Verificamos si la respuesta seleccionada es la correcta
     if (i === test[index].correcta) setScore(s => s + 1);
+  };
+
+  const handleNext = () => {
+    const nextScore = selected === test[index].correcta ? score : score;
+
+    if (index + 1 < test.length) {
+      setIndex(index + 1);
+      setSelected(null);
+    } else {
+      finalizarTest(nextScore);
+    }
   };
 
   const finalizarTest = async (finalScore) => {
     try {
-      // Persistencia de datos en la base de datos
       await fetch(`${API_URL}/api/guardar-resultado`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           titulo_id: config.tituloId,
           puntuacion: finalScore,
-          total_preguntas: test.length
+          total_preguntas: test.length,
+          modo: config.modo || 'titulos',
         }),
       });
     } catch (err) {
-      console.error("Error guardando resultado en la BD:", err);
+      console.error('Error guardando resultado:', err);
     }
-    // Finalizamos la vista actual
     onFinish({ score: finalScore, total: test.length });
   };
 
-  if (loading) return <div className={styles.testContainer}>Cargando preguntas...</div>;
-  if (test.length === 0) return <div className={styles.testContainer}>No hay preguntas disponibles.</div>;
+  if (loading) return (
+    <div className={styles.stateScreen}>
+      <div className={styles.spinner} />
+      <span>Cargando preguntas…</span>
+    </div>
+  );
+
+  if (test.length === 0) return (
+    <div className={styles.stateScreen}>
+      <span style={{ fontSize: '2rem' }}>📭</span>
+      <span>No hay preguntas disponibles para esta selección.</span>
+    </div>
+  );
 
   const p = test[index];
   const progreso = ((index + 1) / test.length) * 100;
+  const acertada = selected === p.correcta;
 
   return (
-    <div className={styles.testContainer}>
-      <div className={styles.questionCard}>
-        <h2 className={styles.questionText}>{p.enunciado}</h2>
-        
-        <div className={styles.optionsContainer}>
-          {p.opciones.map((op, i) => (
-            <button 
-              key={i} 
-              onClick={() => handleAnswer(i)}
-              className={`${styles.optionButton} ${
-                selected !== null 
-                  ? (i === p.correcta ? styles.correct : (selected === i ? styles.incorrect : ""))
-                  : ""
-              }`}
-            >
-              {op}
-            </button>
-          ))}
-        </div>
+    <>
+      {/* Barra de progreso global */}
+      <div className={styles.topBar}>
+        <div className={styles.topBarFill} style={{ width: `${progreso}%` }} />
+      </div>
 
-        {selected !== null && (
-          <button 
-            className={styles.nextButton}
-            onClick={() => {
-              if (index + 1 < test.length) {
-                setIndex(index + 1);
-                setSelected(null);
-              } else {
-                // Aseguramos el conteo final del score
-                const finalScore = selected === p.correcta ? score : score;
-                finalizarTest(finalScore);
-              }
-            }} 
-          >
-            {index + 1 === test.length ? "Ver Resultados" : "Siguiente"}
-          </button>
-        )}
+      <div className={styles.testContainer}>
+        <div className={styles.questionCard}>
 
-        <div className={styles.progressContainer}>
-          <p style={{ color: '#94A3B8', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
-            Pregunta {index + 1} de {test.length}
-          </p>
-          <div className={styles.progressBar}>
-            <div className={styles.progressFill} style={{ width: `${progreso}%` }} />
+          {/* Cabecera */}
+          <div className={styles.testHeader}>
+            <span className={styles.questionCounter}>
+              Pregunta {index + 1} / {test.length}
+            </span>
+            <span className={styles.scoreChip}>
+              ✓ {score} aciertos
+            </span>
           </div>
+
+          {/* Enunciado */}
+          <p className={styles.questionText}>{p.enunciado}</p>
+
+          {/* Opciones */}
+          <div className={styles.optionsContainer}>
+            {p.opciones.map((op, i) => {
+              let estado = '';
+              if (selected !== null) {
+                if (i === p.correcta) estado = styles.correct;
+                else if (selected === i) estado = styles.incorrect;
+              }
+              return (
+                <button
+                  key={i}
+                  onClick={() => handleAnswer(i)}
+                  disabled={selected !== null}
+                  className={`${styles.optionButton} ${estado}`}
+                >
+                  <span className={styles.optionLetter}>{LETTERS[i]}</span>
+                  {op}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Feedback inmediato */}
+          {selected !== null && (
+            <div className={`${styles.feedbackBox} ${acertada ? styles.ok : styles.fail}`}>
+              {acertada ? '✓ ¡Correcto!' : `✗ La respuesta correcta era: ${p.opciones[p.correcta]}`}
+            </div>
+          )}
+
+          {/* Botón siguiente */}
+          {selected !== null && (
+            <button className={styles.nextButton} onClick={handleNext}>
+              {index + 1 === test.length ? 'Ver Resultados →' : 'Siguiente →'}
+            </button>
+          )}
+
         </div>
       </div>
-    </div>
+    </>
   );
 }

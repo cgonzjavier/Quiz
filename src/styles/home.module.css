@@ -1,42 +1,132 @@
 .homeContainer {
   min-height: 100vh;
-  background-color: #0D1B2A;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 2rem;
-  color: white;
 }
 
-.header { text-align: center; margin-bottom: 3rem; }
-.header h1 { color: #C5A059; font-size: 2.5rem; }
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
 
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: var(--gold-glow);
+  border: 1px solid var(--gold-border);
+  border-radius: 99px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.header p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Grid 2x2 */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 480px;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(197, 160, 89, 0.3);
-  padding: 2rem;
-  border-radius: 20px;
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 1.75rem 1.5rem;
+  border-radius: var(--radius-lg);
   text-align: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--transition);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity var(--transition);
 }
 
 .card:hover {
-  background: rgba(197, 160, 89, 0.1);
-  transform: translateY(-5px);
-  border-color: #C5A059;
+  border-color: var(--gold-border);
+  background: var(--bg-elevated);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3), var(--shadow-glow);
 }
 
-.icon { font-size: 2.5rem; }
-.card h3 { color: #F8FAFC; margin: 0; }
+.card:hover::after { opacity: 1; }
+.card:active { transform: translateY(-1px); }
+
+.iconWrap {
+  width: 52px;
+  height: 52px;
+  background: var(--gold-glow);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: all var(--transition);
+}
+
+.card:hover .iconWrap {
+  background: rgba(197,160,89,0.2);
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Card especial "perfil" más estrecha */
+.cardPerfil {
+  grid-column: span 2;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1.25rem 1.5rem;
+  gap: 1rem;
+}
+
+.cardPerfil .iconWrap { width: 40px; height: 40px; font-size: 1.2rem; flex-shrink: 0; }

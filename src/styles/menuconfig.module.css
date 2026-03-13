@@ -1,75 +1,184 @@
 .configContainer {
   min-height: 100vh;
-  background-color: #0D1B2A;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .configCard {
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-xl);
   padding: 2.5rem;
-  border-radius: 30px;
-  border: 1px solid rgba(197, 160, 89, 0.2);
   width: 100%;
-  max-width: 500px;
+  max-width: 520px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+  gap: 1.75rem;
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
 }
 
-.title { color: #C5A059; text-align: center; margin-bottom: 0.5rem; }
-
-.grid {
-  display: grid;
-  gap: 1rem;
+.configCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
-.card {
-  padding: 1.2rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+.titleArea { text-align: center; }
+
+.titleArea h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.titleArea p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.section { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.sectionLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Grid de temas */
+.temaGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.temaCard {
+  padding: 0.9rem 1.1rem;
+  background: var(--bg-input);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-md);
   cursor: pointer;
-  transition: all 0.3s ease;
-  color: #E2E8F0;
+  transition: all var(--transition);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.card:hover { background: rgba(197, 160, 89, 0.1); border-color: #C5A059; }
-
-.card.active { 
-  background: rgba(197, 160, 89, 0.2); 
-  border-color: #C5A059; 
-  box-shadow: 0 0 15px rgba(197, 160, 89, 0.2);
+.temaCard:hover {
+  background: var(--gold-glow);
+  border-color: var(--gold-border);
+  color: var(--text-primary);
 }
 
-.label { color: #C5A059; font-weight: 600; margin: 0; }
+.temaCard.active {
+  background: var(--gold-glow);
+  border-color: var(--gold);
+  color: var(--text-primary);
+  box-shadow: 0 0 16px rgba(197,160,89,0.1);
+}
+
+.temaCard .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  flex-shrink: 0;
+  transition: background var(--transition);
+}
+
+.temaCard.active .dot { background: var(--gold); }
+
+/* Slider de preguntas */
+.sliderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.sliderValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gold);
+  min-width: 2.5rem;
+  text-align: right;
+}
 
 .range {
   width: 100%;
-  height: 6px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+  height: 4px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 99px;
   appearance: none;
   cursor: pointer;
+  outline: none;
 }
 
 .range::-webkit-slider-thumb {
   appearance: none;
   width: 20px; height: 20px;
-  background: #C5A059;
+  background: var(--gold);
   border-radius: 50%;
+  border: 3px solid var(--bg-card);
+  box-shadow: 0 0 0 2px var(--gold-border);
+  cursor: pointer;
+  transition: transform var(--transition);
 }
 
+.range::-webkit-slider-thumb:hover { transform: scale(1.15); }
+
 .startButton {
-  padding: 1.2rem;
-  background: linear-gradient(135deg, #C5A059, #A6864B);
-  color: #0D1B2A;
-  font-weight: 800;
-  border-radius: 16px;
+  padding: 1.1rem;
+  background: var(--gold);
+  color: var(--bg-base);
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: inherit;
+  border-radius: var(--radius-md);
   cursor: pointer;
   border: none;
-  margin-top: 1rem;
+  transition: all var(--transition);
+  letter-spacing: 0.02em;
 }
+
+.startButton:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(197,160,89,0.3);
+}
+
+.startButton:active { transform: translateY(0); }
+
+/* Modo examen / aleatorio — sin selector de temas */
+.examBanner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--gold-glow);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+}
+
+.examBanner .examIcon { font-size: 2rem; }
+
+.examBanner h3 { color: var(--text-primary); margin: 0 0 0.2rem; font-size: 1rem; }
+.examBanner p  { color: var(--text-secondary); margin: 0; font-size: 0.82rem; }
