@@ -19,7 +19,9 @@ export function useUserPlan() {
         .single();
 
       if (!cancelled) {
-        setPlan(error ? 'free' : (data?.plan ?? 'free'));
+        const resolvedPlan = error ? 'free' : (data?.plan ?? 'free');
+        console.log('[useUserPlan] user:', user.id, '| plan:', resolvedPlan, '| error:', error?.message ?? null);
+        setPlan(resolvedPlan);
         setLoading(false);
       }
     }
