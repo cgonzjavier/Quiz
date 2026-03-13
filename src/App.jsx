@@ -7,6 +7,7 @@ import TestView from './components/testview';
 import Results from './components/results';
 import BackButton from './components/backbutton';
 import Perfil from './components/perfil';
+import Upgrade from './components/upgrade';
 import { supabase } from './lib/supabaseClient';
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
           if (mode === 'perfil')    setFase('perfil');
           if (mode === 'examen')    setFase('config_examen');
           if (mode === 'aleatorio') setFase('config_aleatorio');
+          if (mode === 'upgrade')   setFase('upgrade');
         }} />
       )}
 
@@ -92,6 +94,13 @@ function App() {
             mode="aleatorio"
             onStart={(c) => { setConfig({ ...c, modo: 'aleatorio' }); setFase('test'); }}
           />
+        </>
+      )}
+
+      {fase === 'upgrade' && (
+        <>
+          <BackButton onClick={() => setFase('home')} />
+          <Upgrade onBack={() => setFase('home')} />
         </>
       )}
 
