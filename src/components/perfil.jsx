@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/perfil.module.css';
 
-export default function Perfil() {
+export default function Perfil({ onLogout }) {
   const [stats, setStats] = useState({ totalTests: 0, promedio: 0, mejorMarca: 0 });
   const [historial, setHistorial] = useState([]);
   const [nombre, setNombre] = useState('Estudiante');
@@ -132,6 +132,9 @@ export default function Perfil() {
           />
           <button className={styles.saveButton} onClick={handleSave}>
             {saved ? '✓ Guardado' : 'Guardar cambios'}
+          </button>
+          <button className={styles.logoutButton} onClick={onLogout}>
+            Cerrar sesión
           </button>
         </div>
 

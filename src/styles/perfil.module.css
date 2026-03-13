@@ -194,6 +194,26 @@
   box-shadow: 0 8px 20px rgba(197,160,89,0.3);
 }
 
+.logoutButton {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.9rem;
+  background: transparent;
+  color: #EF4444;
+  border: 1px solid rgba(239,68,68,0.3);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.logoutButton:hover {
+  background: rgba(239,68,68,0.08);
+  border-color: rgba(239,68,68,0.6);
+}
+
 /* Empty state historial */
 .emptyHistory {
   text-align: center;
